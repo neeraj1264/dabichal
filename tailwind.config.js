@@ -27,10 +27,11 @@ module.exports = {
         accent: "#FFB347",
         pink: "#CB519E",
         light: "rgb(249, 250, 251)",
-        paragraph: "#707070",
+        paragraph: "#8A8C94",
         black: "black",
         white: "white",
         orange: "#ff8711",
+        gray: "#d8d8ff"
       },
       boxShadow: {
         custom: "0 4px 9px rgba(202, 87, 159, 0.2)",
