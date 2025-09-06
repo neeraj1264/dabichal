@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Mail, Phone, Menu, X, ChevronDown, Grid } from "lucide-react";
@@ -80,6 +80,20 @@ const NAV = [
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > window.innerHeight) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   return (
     <header className="w-full">
@@ -87,7 +101,11 @@ export default function Navbar() {
       {/* top bars */}
 
       {/* main nav */}
-      <nav className="bg-white border-b shadow-sm">
+      <nav className={`w-full z-50 transition-all duration-300 ${
+        isFixed
+          ? "fixed top-0 left-0 bg-white shadow-lg"
+          : "bg-white border-b shadow-sm"
+      }`}>
         <div className="mx-auto max-w-7xl px-4 sm:px-14">
           <div className="flex h-20 items-center justify-between">
             {/* logo */}
@@ -137,7 +155,7 @@ export default function Navbar() {
   }`}
 >
   {/* header row with logo + close button */}
-  <div className="flex items-center justify-between px-4 py-4 border-b">
+  <div className="flex items-center justify-between px-4 py-4">
     <div className="relative w-28 h-14">
       <Image src="/logo.png" alt="Dabbi Chal" fill className="object-contain" />
     </div>
@@ -151,7 +169,7 @@ export default function Navbar() {
     {NAV.map((entry) => (
       <div key={entry.label}>
         {entry.items ? (
-          <details className="group border-b py-2">
+          <details className="group border-b border-gray py-2 font-semibold">
             <summary className="flex items-center justify-between cursor-pointer list-none font-medium">
               <span>{entry.label}</span>
               <ChevronDown
@@ -175,7 +193,7 @@ export default function Navbar() {
         ) : (
           <Link
             href={entry.href}
-            className="block py-2 border-b font-medium"
+            className="block py-2 border-b border-gray font-semibold"
             onClick={() => setMobileOpen(false)}
           >
             {entry.label}

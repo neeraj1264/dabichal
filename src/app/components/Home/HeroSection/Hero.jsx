@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import { FaArrowRight, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
@@ -85,7 +85,7 @@ export default function Hero() {
              >
       {slide.button}
       <span className="transform transition-transform duration-500 group-hover:translate-x-2">
-        <FaArrowRight />
+        <FaChevronRight />
       </span>
     </Link>
             </div>

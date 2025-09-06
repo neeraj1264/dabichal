@@ -1,3 +1,4 @@
+import Reveal from "../../reveal";
 import { OneWayRoutes } from "./OneWayRoutes";
 import { Statistics } from "./Statistics";
 

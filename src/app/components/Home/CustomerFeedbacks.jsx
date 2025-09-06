@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import { FaStar } from "react-icons/fa";
+import Reveal from "../reveal";
 
 const testimonials = [
   {
@@ -57,7 +58,7 @@ export default function CustomerFeedbacks() {
   };
 
   return (
-<section className="py-12 bg-custom-gradient">
+<Reveal className="py-12 bg-custom-gradient">
       <h2 className="text-center text-2xl md:text-3xl font-bold mb-10">
         Customer Feedbacks
       </h2>
@@ -86,6 +87,6 @@ export default function CustomerFeedbacks() {
           ))}
         </Slider>
       </div>
-    </section>
+    </Reveal>
   );
 }

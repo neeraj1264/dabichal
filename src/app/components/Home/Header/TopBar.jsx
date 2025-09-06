@@ -21,9 +21,9 @@ export function TopBar() {
       {/* RIGHT: Black block */}
       <div className="flex-1 bg-black text-white text-sm flex items-center justify-center px-1 md:px-4 sm:px-6">
         <div className="flex items-center gap-6">
-          <a href="mailto:dabbichalcab@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80 hidden sm:inline">
+          <a href="mailto:neerajm1264@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80 hidden sm:inline">
             <Mail size={14} aria-hidden className=" sm:inline"/>
-            <span className="hidden sm:inline mx-2">dabbichalcab@gmail.com</span>
+            <span className="hidden sm:inline mx-2">neerajm1264@gmail.com</span>
           </a>
           <a href="tel:+917015823645" className="inline-flex items-center gap-2 hover:opacity-80">
             <Phone size={14} aria-hidden />

@@ -1,7 +1,8 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import { FaArrowRight } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
+import Reveal from "../reveal";
 
 export default function TaxiCabRide() {
   const cars = [
@@ -17,14 +18,14 @@ export default function TaxiCabRide() {
     <section className="bg-[#eee] py-16">
       <div className="container mx-auto px-6">
         {/* Title */}
-        <h2 className="text-2xl sm:text-3xl font-bold text-center mb-12">
+        <Reveal className="text-2xl sm:text-3xl font-bold text-center mb-12">
           Taxi/Cab Ride
-        </h2>
+        </Reveal>
 
         {/* Car Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <Reveal className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-8">
           {cars.map((car, index) => (
-            <div
+            <Reveal
               key={index}
   className="bg-white rounded-xl shadow-md hover:shadow-xl hover:bg-black hover:text-white 
              transition-all duration-500 ease-in-out overflow-hidden p-2 
@@ -33,21 +34,21 @@ export default function TaxiCabRide() {
               <img
                 src={car.img}
                 alt={car.name}
-                className="w-[100%] h-48 object-cover rounded-xl"
+                className="w-[100%] h-28 sm:h-48 object-cover rounded-xl"
               />
               {/* Info */}
-              <div className="p-4 text-center">
+              <Reveal className="pt-2 sm:p-4 text-center">
                 <h3 className="text-lg font-semibold mb-4">{car.name}</h3>
-                <Link className="group inline-flex items-center gap-2 bg-[#f58220] text-white px-5 py-2 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
+                <Link className="text-xs sm:text-lg group inline-flex items-center gap-2 bg-[#f58220] text-white px-5 py-2 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
                 href={car.to}
                 >
                   Book Now
-                  <FaArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                  <FaChevronRight className="transition-transform duration-300 group-hover:translate-x-1" />
                 </Link>
-              </div>
-            </div>
+              </Reveal>
+            </Reveal>
           ))}
-        </div>
+        </Reveal>
       </div>
     </section>
   );
