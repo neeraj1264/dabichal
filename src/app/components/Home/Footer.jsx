@@ -1,5 +1,6 @@
 import React from "react";
 import Reveal from "../reveal";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -7,10 +8,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto px-20 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo + Description */}
         <Reveal className="text-center">
-          <img
+          <Image
             src="/logo.png"
             alt="Dabbi Chal"
             className="mx-auto mb-4 rounded-lg w-56"
+             width={600} // must give width
+             height={400}
           />
           <p className="text-base leading-relaxed text-paragraph">
             Enjoy effortless Taxi booking in Chandigarh / Mohali / Zirakpur /

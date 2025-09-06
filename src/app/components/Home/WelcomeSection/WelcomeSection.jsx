@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaStar, FaChevronRight } from "react-icons/fa";
 import Reveal from "../../reveal";
+import Image from "next/image";
 
 export default function WelcomeSection() {
   return (
@@ -28,20 +29,26 @@ export default function WelcomeSection() {
 
           {/* Main Image */}
 
-                     <img
+          <Image
+            width={600} // must give width
+            height={400}
             src="/welcome/welcome3.png"
             alt="Taxi Service"
             className="hidden sm:flex rounded-md shadow-lg absolute w-[77%] bottom-[18%]"
           />
 
-          <img
+          <Image
+            width={600} // must give width
+            height={400}
             src="/welcome/welcome1.jpg"
             alt="Taxi Service"
             className="rounded-md shadow-lg w-full sm:w-[75%] sm:absolute top-0 right-[12%] height-[80vh]"
           />
 
           {/* Small Image */}
-          <img
+          <Image
+            width={600} // must give width
+            height={400}
             src="/welcome/welcome2.jpg"
             alt="Taxi App"
             className=" absolute top-0 right-[-97px] sm:right-[-20%] transform -translate-x-1/2 w-[192px] sm:w-[250px] border-4 border-white shadow-lg"
@@ -93,8 +100,9 @@ export default function WelcomeSection() {
           </Reveal>
 
           {/* Button */}
-          <Link className="group inline-flex items-center gap-2 bg-[#f58220] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
-          href={"/about-us"}
+          <Link
+            className="group inline-flex items-center gap-2 bg-[#f58220] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
+            href={"/about-us"}
           >
             Learn More Us
             <FaChevronRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" />

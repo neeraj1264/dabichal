@@ -1,41 +1,42 @@
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
 import Reveal from "../reveal";
+import Image from "next/image";
 
 const tours = [
   {
     id: 1,
     title: "Srinagar Tour 6 Days",
     image:
-      "./services/s1.jpg",
+      "/services/s1.jpg",
     tag: "6 NIGHTS / 6 DAYS",
   },
   {
     id: 2,
     title: "Jammu Srinagar Gulmarg Sonmarg Pahalgam Tour 8 Days",
     image:
-      "./services/s2.jpg",
+      "/services/s2.jpg",
     tag: "8 NIGHTS / 9 DAYS",
   },
   {
     id: 3,
     title: "Chandigarh Amritsar Jammu Srinagar 8 Days",
     image:
-      "./services/s3.jpg",
+      "/services/s3.jpg",
     tag: "7 NIGHTS / 8 DAYS",
   },
   {
     id: 4,
     title: "9 Days Spiti Valley Tour",
     image:
-      "./services/s4.jpg",
+      "/services/s4.jpg",
     tag: "9 NIGHTS / 9 DAYS",
   },
   {
     id: 5,
     title: "9 Days Spiti Valley Tour",
     image:
-      "./services/s5.jpg",
+      "/services/s5.jpg",
     tag: "7 NIGHTS / 9 DAYS",
   },
 ];
@@ -57,7 +58,9 @@ export default function TourServices() {
           >
             {/* Image */}
             <Reveal className="relative">
-              <img
+              <Image
+                width={600} // must give width
+                height={400}
                 src={tour.image}
                 alt={tour.title}
                 className="w-full object-cover"

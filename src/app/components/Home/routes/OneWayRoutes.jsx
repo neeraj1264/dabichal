@@ -1,18 +1,19 @@
 import { FaChevronRight } from "react-icons/fa";
 import Reveal from "../../reveal";
+import Image from "next/image";
 
 export const OneWayRoutes = () => {
   const routes = [
-    { title: "Chandigarh To Shimla", img: "routes/routes1.jpg"     ,to: "/outstation-routes/chandigarh-to-shimla"},
-    { title: "Chandigarh To Manali", img: "routes/routes2.jpg"      ,to: "/outstation-routes/chandigarh-to-manali"},
-    { title: "Chandigarh To Kasol", img: "routes/routes3.jpg"      ,to: "/outstation-routes/chandigarh-to-kasol"},
-    { title: "Chandigarh To Rishikesh", img: "routes/routes4.jpg"  ,to: "/outstation-routes/chandigarh-to-rishikesh"},
-    { title: "Chandigarh To Dehradhun", img: "routes/routes5.jpg"  ,to: "/outstation-routes/chandigarh-to-dehradhun"},
-    { title: "Chandigarh To Ghajiabad", img: "routes/routes6.jpg"   ,to: "/outstation-routes/chandigarh-to-ghajiabad"},
-    { title: "Chandigarh To Jalandhar", img: "routes/routes7.jpg"   ,to: "/outstation-routes/chandigarh-to-jalandhar"},
-    { title: "Chandigarh To Jammu", img: "routes/routes8.jpg"      ,to: "/outstation-routes/chandigarh-to-jammu"},
-    { title: "Chandigarh To Katra", img: "routes/routes9.jpg"       ,to: "/outstation-routes/chandigarh-to-katra"},
-    { title: "Chandigarh To Dharamshala", img: "routes/routes10.jpg",to: "/outstation-routes/chandigarh-to-dharamshala"},
+    { title: "Chandigarh To Shimla",     img: "/routes/routes1.jpg"     ,to: "/outstation-routes/chandigarh-to-shimla"},
+    { title: "Chandigarh To Manali",     img: "/routes/routes2.jpg"      ,to: "/outstation-routes/chandigarh-to-manali"},
+    { title: "Chandigarh To Kasol",      img: "/routes/routes3.jpg"      ,to: "/outstation-routes/chandigarh-to-kasol"},
+    { title: "Chandigarh To Rishikesh",  img: "/routes/routes4.jpg"  ,to: "/outstation-routes/chandigarh-to-rishikesh"},
+    { title: "Chandigarh To Dehradhun",  img: "/routes/routes5.jpg"  ,to: "/outstation-routes/chandigarh-to-dehradhun"},
+    { title: "Chandigarh To Ghajiabad",  img: "/routes/routes6.jpg"   ,to: "/outstation-routes/chandigarh-to-ghajiabad"},
+    { title: "Chandigarh To Jalandhar",  img: "/routes/routes7.jpg"   ,to: "/outstation-routes/chandigarh-to-jalandhar"},
+    { title: "Chandigarh To Jammu",      img: "/routes/routes8.jpg"      ,to: "/outstation-routes/chandigarh-to-jammu"},
+    { title: "Chandigarh To Katra",      img: "/routes/routes9.jpg"       ,to: "/outstation-routes/chandigarh-to-katra"},
+    { title: "Chandigarh To Dharamshala",img: "/routes/routes10.jpg",to: "/outstation-routes/chandigarh-to-dharamshala"},
   ];
 
   return (
@@ -23,13 +24,14 @@ export const OneWayRoutes = () => {
 
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
         {routes.map((route, idx) => (
-          <div>
+          <div key={idx}>
           <Reveal
-            key={idx}
             className="relative rounded-xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-500 pb-32"
           >
             {/* Image */}
-            <img
+            <Image
+              width={600} // must give width
+              height={400}
               src={route.img}
               alt={route.title}
               className="h-full w-full object-cover rounded-lg"

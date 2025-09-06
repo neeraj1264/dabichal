@@ -3,15 +3,16 @@ import Link from "next/link";
 import React from "react";
 import { FaChevronRight } from "react-icons/fa";
 import Reveal from "../reveal";
+import Image from "next/image";
 
 export default function TaxiCabRide() {
   const cars = [
-    { name: "Innova Hycross",img:  "./cab/cab1.jpg", to:"/taxi-ride/innova-hycross"},
-    { name: "Toyota Etios",  img:  "./cab/cab2.jpg", to:"/taxi-ride/toyota-etios"},
-    { name: "Innova Crysta", img:  "./cab/cab3.jpg", to:"/taxi-ride/innova-crysta"},
-    { name: "Maruti Dzire",  img:  "./cab/cab4.jpg", to:"/taxi-ride/maruti-dzire"},
-    { name: "Maruti Ertiga", img:  "./cab/cab5.jpg", to:"/taxi-ride/maruti-ertiga"},
-    { name: "Kia Carens",    img:  "./cab/cab6.jpg", to:"/taxi-ride/kia-carens"},
+    { name: "Innova Hycross",img:  "/cab/cab1.jpg", to:"/taxi-ride/innova-hycross"},
+    { name: "Toyota Etios",  img:  "/cab/cab2.jpg", to:"/taxi-ride/toyota-etios"},
+    { name: "Innova Crysta", img:  "/cab/cab3.jpg", to:"/taxi-ride/innova-crysta"},
+    { name: "Maruti Dzire",  img:  "/cab/cab4.jpg", to:"/taxi-ride/maruti-dzire"},
+    { name: "Maruti Ertiga", img:  "/cab/cab5.jpg", to:"/taxi-ride/maruti-ertiga"},
+    { name: "Kia Carens",    img:  "/cab/cab6.jpg", to:"/taxi-ride/kia-carens"},
   ];
 
   return (
@@ -31,7 +32,9 @@ export default function TaxiCabRide() {
              transition-all duration-500 ease-in-out overflow-hidden p-2 
              transform hover:-translate-y-3">
               {/* Image */}
-              <img
+              <Image
+               width={600} // must give width
+               height={400}
                 src={car.img}
                 alt={car.name}
                 className="w-[100%] h-28 sm:h-48 object-cover rounded-xl"
