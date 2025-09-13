@@ -113,7 +113,7 @@ export default function Navbar() {
               <Link href="/" className="flex items-center gap-3">
                 <div className="h-28 w-32 relative overflow-hidden">
                   {/* put /logo.png in public/ */}
-                  <Image src="/logo.png" alt="Dabbi Chal" fill sizes="48px" className="object-contain" />
+                  <Image src="/logo.png"  alt="Dabbi Chal" fill sizes="48px" className="object-contain" />
                 </div>
               </Link>
             </div>
@@ -157,7 +157,7 @@ export default function Navbar() {
   {/* header row with logo + close button */}
   <div className="flex items-center justify-between px-4 py-4">
     <div className="relative w-28 h-14">
-      <Image src="/logo.png" alt="Dabbi Chal" fill className="object-contain" />
+      <Image src="/logo.png" alt="Dabbi Chal" sizes="48px" fill className="object-contain" />
     </div>
     <button onClick={() => setMobileOpen(false)} className="text-white bg-[#f58220] rounded-full p-2">
       <X size={20} />

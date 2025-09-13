@@ -19,8 +19,8 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="/logo.png"
-          sizes="128x128"
+          href="/logo_square.png"
+          sizes="192x192"
           type="image/png"
         />
       </head>

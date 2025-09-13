@@ -11,6 +11,7 @@ export default function Footer() {
           <Image
             src="/logo.png"
             alt="Dabbi Chal"
+            sizes="192x192"
             className="mx-auto mb-4 rounded-lg w-56"
              width={600} // must give width
              height={400}

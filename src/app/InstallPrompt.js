@@ -91,7 +91,7 @@ export default function InstallPrompt() {
       {isIos ? (
         <>
                  <div className="flex flex-col items-center space-y-4">
-         <h2 className="text-xl font-bold text-center text-gray pt-2">
+         <h2 className="text-xl font-bold text-center text-black pt-2">
             Install Our App
           </h2>
         <p className="text-center text-sm text-gray">
@@ -102,7 +102,7 @@ export default function InstallPrompt() {
         </>
       ) : (
         <>
-          <h2 className="text-xl font-bold text-center text-gray">
+          <h2 className="text-xl font-bold text-center text-black">
             Install Our App
           </h2>
           <h2

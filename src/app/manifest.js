@@ -1,7 +1,7 @@
 export default function manifest() {
   return {
-    name: 'Treasured Care For You',
-    short_name: 'Treasured Care For You',
+    name: 'Car Booking',
+    short_name: 'Car Booking Services',
     description: 'Discover a community where independence is cherished. Treasured Care For You offers personalised NDIS support in a caring and welcoming environment for individuals and families',
     start_url: '/',
     display: 'standalone',
@@ -9,13 +9,13 @@ export default function manifest() {
     theme_color: '#ffffff',
     icons: [ 
       {
-        src: '/logo1.png', 
+        src: '/logo_square.png', 
         sizes: '192x192',
         type: 'image/png', 
       },
       {
-        src: '/logo1.png', 
-        sizes: '512x512',
+        src: '/logo_square.png', 
+        sizes: '192x192',
         type: 'image/png',
       },
     ],
