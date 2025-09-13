@@ -26,7 +26,7 @@ module.exports = {
         secondary: "#6BAED9",
         accent: "#FFB347",
         pink: "#CB519E",
-        light: "rgb(249, 250, 251)",
+        light: "#eee",
         paragraph: "#8A8C94",
         black: "black",
         white: "white",
