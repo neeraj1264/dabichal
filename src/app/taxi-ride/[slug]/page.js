@@ -156,14 +156,16 @@ export default function CarDetailPage() {
               <input
                 type="date"
                 name="startDate"
-                className="w-full border rounded p-2"
+                placeholder="Start Date"
+                className="w-full border rounded p-2 bg-white"
                 value={formData.startDate}
                 onChange={handleChange}
               />
               <input
                 type="date"
                 name="endDate"
-                className="w-full border rounded p-2"
+                placeholder="End Date"
+                className="w-full border rounded p-2 bg-white"
                 value={formData.endDate}
                 onChange={handleChange}
               />
