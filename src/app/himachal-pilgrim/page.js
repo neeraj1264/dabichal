@@ -5,7 +5,7 @@ export const metadata = {
   description: 'About Us.....',
 };
 
-export default function ladakhKashmir() {
+export default function Himachal() {
   return (
     <TourServices/>
   )
