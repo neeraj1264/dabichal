@@ -14,7 +14,7 @@ export default function WorkingProcess() {
 
   return (
     <section
-      className="relative text-white py-16"
+      className="relative text-white py-16 mt-16"
       style={{
         background:
           "radial-gradient(circle at left, #00132fff, #111111 60%), radial-gradient(circle at right, #00132fff, #111111 60%)",

@@ -4,10 +4,12 @@ import React from "react";
 import { FaStar, FaChevronRight } from "react-icons/fa";
 import Reveal from "../../reveal";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 
 export default function WelcomeSection() {
+  const pathname = usePathname();
   return (
-    <section className="py-16 sm:px-12 px-4 bg-white">
+    <section className="pt-16 sm:px-12 px-4 bg-white">
       <div className="container mx-auto sm:px-4 sm:grid md:grid-cols-2 gap-10">
         {/* Left Images */}
         <Reveal className="relative">
@@ -95,18 +97,24 @@ export default function WelcomeSection() {
             preferences.
           </Reveal>
 
-          <Reveal className="text-xl font-semibold mb-2">
+          <Reveal className="text-2xl sm:text-2xl font-bold mb-4 ">
             Airport Transfers Across North India
           </Reveal>
-
-          {/* Button */}
-          <Link
-            className="group inline-flex items-center gap-2 bg-[#f58220] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
-            href={"/about-us"}
-          >
-            Learn More Us
-            <FaChevronRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
-          </Link>
+          <Reveal className="text-paragraph mb-4">
+            Your flight schedule is important, and we make sure you never miss a
+            flight. We provide dependable airport transfers to and from all
+            airports across North India, ensuring timely
+          </Reveal>
+          {/* ✅ Show button only on home page */}
+          {pathname === "/" && (
+            <Link
+              className="group inline-flex items-center gap-2 bg-[#f58220] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
+              href={"/about-us"}
+            >
+              Learn More Us
+              <FaChevronRight className="transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+            </Link>
+          )}
         </div>
       </div>
     </section>

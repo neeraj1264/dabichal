@@ -14,6 +14,7 @@ const NAV = [
   },
   {
     label: "Taxi Ride",
+    href:"/taxi-ride",
     items: [
       { label: "Innova Hycross", href: "/taxi-ride/innova-hycross" },
       { label: "Honda Amaze",    href: "/taxi-ride/honda-amaze" },
@@ -26,16 +27,18 @@ const NAV = [
   },
   { 
     label: "Force Travellers",
+    href: "/tempo-travellers",
     items: [
-      { label: "12 Seater Tempo Traveller",   href: "/tempo-travellers-/12-seater-tempo-traveller" },
-      { label: "17 Seater Tempo Traveller",   href: "/tempo-travellers-/17-seater-tempo-traveller-" },
-      { label: "12 Seater Urbania Traveller", href: "/tempo-travellers-/12-seater-urbania-traveller-" },
-      { label: "12 Seater Urbania Traveller", href: "/tempo-travellers-/17-seater-urbania-traveller-" },
+      { label: "12 Seater Tempo Traveller",   href: "/tempo-travellers/12-seater-tempo-traveller" },
+      { label: "17 Seater Tempo Traveller",   href: "/tempo-travellers/17-seater-tempo-traveller" },
+      { label: "12 Seater Urbania Traveller", href: "/tempo-travellers/12-seater-urbania-traveller" },
+      { label: "12 Seater Urbania Traveller", href: "/tempo-travellers/17-seater-urbania-traveller" },
     ],
 
   },
   {
     label: "Himachal/Pilgrim",
+    href: "/himachal-pilgrim",
     items: [
       { label: "Chandigarh With DharamShala", href: "/himachal-pilgrim/amritsar-with-dharamshala" },
       { label: "Chandigarh Dalhousie DharamShala Tour", href: "/himachal-pilgrim/amritsar-dalhousie-dharamshala-tour" },
@@ -48,6 +51,7 @@ const NAV = [
   },
   {
     label: "Ladakh/Kashmir",
+    href: "/ladakh-kashmir",
     items: [
       { label: "Kashmir", href: "/ladakh-kashmir/kashmir" },
       { label: "Ladakh & Spiti", href: "/ladakh-kashmir/ladakh-spiti" },
@@ -55,6 +59,7 @@ const NAV = [
   },
   {
     label: "Outstation Routes",
+    href: "/outstation-routes",
     items: [
       { label: "Chandigarh To Shimla ",     href: "/outstation-routes/chandigarh-to-shimla" },
       { label: "Chandigarh To Manali ",     href: "/outstation-routes/chandigarh-to-manali" },
@@ -133,7 +138,7 @@ export default function Navbar() {
 
             {/* right CTA + mobile button */}
             <div className="flex items-center gap-3">
-              <Link href="/contact" className="hidden md:inline-flex items-center rounded-full bg-[#f58220] px-5 py-2 text-white font-medium hover:opacity-95">
+              <Link href="/contact" className="hidden md:inline-flex items-center rounded-full bg-[#f58220] px-5 py-2 text-white font-medium hover:opacity-95 hover:bg-light hover:text-orange">
                 Contact Us
               </Link>
 
@@ -171,11 +176,23 @@ export default function Navbar() {
         {entry.items ? (
           <details className="group border-b border-gray py-2 font-semibold">
             <summary className="flex items-center justify-between cursor-pointer list-none font-medium">
-              <span>{entry.label}</span>
-              <ChevronDown
-                size={16}
-                className="transition group-open:rotate-180"
-              />
+             <Link
+      href={entry.href}
+      className="flex-1"
+      onClick={() => setMobileOpen(false)}
+    >
+      {entry.label}
+    </Link>
+                {/* Chevron stays only for toggle */}
+    <ChevronDown
+      size={16}
+      className="transition group-open:rotate-180 ml-2"
+      onClick={(e) => {
+        e.preventDefault(); // stop Link navigation
+        const parent = e.currentTarget.closest("details");
+        parent?.toggleAttribute("open");
+      }}
+    />
             </summary>
             <div className="pl-4 pt-2 space-y-1">
               {entry.items.map((it) => (
