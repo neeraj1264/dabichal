@@ -1,6 +1,10 @@
-import { himachalPilgrimTours, ladakhKashmirTours, outstationRoutes } from "@/app/components/data/tours";
+import {
+  himachalPilgrimTours,
+  ladakhKashmirTours,
+  outstationRoutes,
+} from "@/app/components/data/tours";
+import Image from "next/image";
 import React from "react";
-
 
 const categories = {
   "himachal-pilgrim": himachalPilgrimTours,
@@ -24,10 +28,12 @@ export default function TourPage({ params }) {
   return (
     <section className="max-w-4xl mx-auto p-6">
       <h1 className="text-3xl font-bold mb-4">{tour.title}</h1>
-      <img
+      <Image
         src={tour.image}
         alt={tour.title}
         className="rounded-lg shadow-lg mb-6"
+        width={400}
+        height={300}
       />
       <p className="text-lg text-gray-700">{tour.description}</p>
     </section>

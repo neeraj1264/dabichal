@@ -12,7 +12,7 @@ export default function Aboutus() {
       <WelcomeSection />
 
       <Reveal className="text-paragraph mb-4 sm:mx-24 mx-4">
-        pickups and drops. Whether you're arriving in or departing from
+        pickups and drops. Whether you&apos;re arriving in or departing from
         Chandigarh, we are committed to delivering a smooth and punctual
         experience.
       </Reveal>
