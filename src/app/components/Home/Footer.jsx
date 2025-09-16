@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="bg-neutral-900 text-white">
       <div className="max-w-7xl mx-auto px-20 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Logo + Description */}
-        <Reveal className="text-center">
+        <div className="text-center">
           <Image
             src="/logo.png"
             alt="Dabbi Chal"
@@ -21,7 +21,7 @@ export default function Footer() {
             Panchkula and tours in Chandigarh with our reliable, hassle-free
             one-way cab services.
           </p>
-        </Reveal>
+        </div>
 
         {/* Quick Links */}
         <Reveal className="text-center">

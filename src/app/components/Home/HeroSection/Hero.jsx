@@ -7,7 +7,7 @@ import Link from "next/link";
 const slides = [
   {
     id: 1,
-    image: "./hero/hero1.jpg",
+    image: "/hero/hero1.jpg",
     title: "Welcome to Dabbi Chal Cab Service",
     subtitle:
       "Top-rated one-way taxi and travel solutions for safe, budget-friendly journeys.",
@@ -16,7 +16,7 @@ const slides = [
   },
   {
     id: 2,
-    image: "./hero/hero2.jpg",
+    image: "/hero/hero2.jpg",
     title: "Taxi/One Way",
     subtitle: "Dependable one-way taxi services ensuring smooth and relaxing travel!",
     button: "Explore now",
@@ -24,7 +24,7 @@ const slides = [
   },
   {
     id: 3,
-    image: "./hero/hero3.jpg",
+    image: "/hero/hero3.jpg",
     title: "Tour & Travels Services",
     subtitle: "Expert travel and tour services for memorable and enjoyable experiences!",
     button: "Explore more",

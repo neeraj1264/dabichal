@@ -11,10 +11,10 @@ export const metadata = {
 
 export default function TempoTravellerPage() {
   const cars = [
-    { name: "12 Seater Tempo Traveller",img:  "/tempo/t1.jpg", to:"/tempo-travellers-/12-seater-tempo-traveller/"},
-    { name: "17 Seater Tempo Traveller",  img:  "/tempo/t2.jpg", to:"/tempo-travellers-/17-seater-tempo-traveller/"},
-    { name: "12 Seater Urbania Traveller", img:  "/tempo/t3.jpg", to:"/tempo-travellers-/12-seater-urbania-traveller/"},
-    { name: "17 Seater Urbania Traveller",  img:  "/tempo/t4.jpg", to:"/tempo-travellers-/17-seater-urbania-traveller/"},
+    { name: "12 Seater Tempo Traveller",img:  "/tempo/t1.jpg", to:"/tempo-travellers/12-seater-tempo-traveller/"},
+    { name: "17 Seater Tempo Traveller",  img:  "/tempo/t2.jpg", to:"/tempo-travellers/17-seater-tempo-traveller/"},
+    { name: "12 Seater Urbania Traveller", img:  "/tempo/t3.jpg", to:"/tempo-travellers/12-seater-urbania-traveller/"},
+    { name: "17 Seater Urbania Traveller",  img:  "/tempo/t4.jpg", to:"/tempo-travellers/17-seater-urbania-traveller/"},
   ];
 
   return (
