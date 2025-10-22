@@ -60,13 +60,13 @@ export default function WelcomeSection() {
         {/* Right Text Content */}
         <div className="text-black py-4 sm:py-0">
           <Reveal className="text-orange font-semibold uppercase tracking-wider mb-2">
-            Welcome to Dabbi Chal
+            Welcome to Sardar Ji Travels
           </Reveal>
           <Reveal className="text-2xl sm:text-2xl font-bold mb-4 ">
             Your Trusted Travel Partner In Chandigarh
           </Reveal>
           <Reveal className="text-paragraph mb-4">
-            Dabbi Chal is a premier name in providing exceptional taxi services
+            Sardar Ji Travels is a premier name in providing exceptional taxi services
             in Chandigarh. We specialize in offering seamless and hassle-free
             taxi rental services for both business and leisure travel, including
             local and outstation trips. Whether you’re planning a business trip,
@@ -78,7 +78,7 @@ export default function WelcomeSection() {
             Reliable And Flexible Taxi Services In Chandigarh
           </Reveal>
           <Reveal className="text-paragraph mb-4">
-            At Dabbi Chal, we are proud to offer a wide range of taxi services
+            At Sardar Ji Travels, we are proud to offer a wide range of taxi services
             designed to meet all your travel requirements. Our flexible rental
             options include one-way rentals, round trips, airport transfers, and
             guided tours, ensuring that your journey is efficient, timely, and

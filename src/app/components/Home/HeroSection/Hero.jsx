@@ -8,7 +8,7 @@ const slides = [
   {
     id: 1,
     image: "/hero/hero1.jpg",
-    title: "Welcome to Dabbi Chal Cab Service",
+    title: "Welcome to Sardar Ji Travels Cab Service",
     subtitle:
       "Top-rated one-way taxi and travel solutions for safe, budget-friendly journeys.",
     button: "Explore now",

@@ -9,7 +9,7 @@ export function TopBar() {
     <div className="flex w-full h-10">
       {/* LEFT: Orange block with angled wedge */}
       <div className="hidden md:flex relative w-1/3 bg-orange text-white flex items-center justify-center px-4 sm:px-6 overflow-visible">
-        <span className="text-lg font-medium">Dabbi Chal Cab Service</span>
+        <span className="text-lg font-medium">Sardar Ji Travels Cab Service</span>
 
         {/* the wedge (same orange) overlapping into the black area */}
         <span
@@ -25,13 +25,13 @@ export function TopBar() {
             <Mail size={14} aria-hidden className=" sm:inline"/>
             <span className="hidden sm:inline mx-2">neerajm1264@gmail.com</span>
           </a>
-          <a href="tel:+917015823645" className="inline-flex items-center gap-2 hover:opacity-80">
+          <a href="tel:+919518131347" className="inline-flex items-center gap-2 hover:opacity-80">
             <Phone size={14} aria-hidden />
-            <span className=" sm:inline">+91 7015823645</span>
+            <span className=" sm:inline">+91 9518131347</span>
           </a>
-          <a href="tel:+917015516336" className="inline-flex items-center gap-2 hover:opacity-80">
+          <a href="tel:+919034653455" className="inline-flex items-center gap-2 hover:opacity-80">
             <Phone size={14} aria-hidden className="hidden sm:inline"/>
-            <span className="sm:inline">+91 7015516336</span>
+            <span className="sm:inline">+91 9034653455</span>
           </a>
           <a href="https://www.facebook.com/neeraj.manchanda.3910" className="text-xl">
              <FaFacebookF  className="hover:text-blue-600" />

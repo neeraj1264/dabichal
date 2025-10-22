@@ -96,7 +96,7 @@ export default function CarDetailPage() {
     `;
 
     const whatsappUrl =
-      "https://wa.me/917015823645?text=" + encodeURIComponent(msg);
+      "https://wa.me/919518131347?text=" + encodeURIComponent(msg);
 
     window.open(whatsappUrl, "_blank");
   };

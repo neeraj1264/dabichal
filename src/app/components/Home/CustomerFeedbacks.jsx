@@ -8,35 +8,35 @@ const testimonials = [
     id: 1,
     name: "Ravinder Sharma",
     feedback:
-      "Dabbi Chal, led by Tejinder Singh, offers exceptional service! The vehicle was spotless, and driver Rahul Shukla made the journey smooth with his friendly and professional demeanor. Highly recommended for anyone looking for reliable and comfortable transportation.",
+      "Sardar Ji Travels, led by Tejinder Singh, offers exceptional service! The vehicle was spotless, and driver Rahul Shukla made the journey smooth with his friendly and professional demeanor. Highly recommended for anyone looking for reliable and comfortable transportation.",
     rating: 5,
   },
   {
     id: 2,
     name: "Jolly",
     feedback:
-      "Tejinder Singh’s Dabbi Chal provided a fantastic experience! Our driver Rahul Shukla was not only courteous and punctual but also offered great local insights. The vehicle was clean and well-maintained, making our trip enjoyable. I will definitely choose Dabbi Chal again!",
+      "Tejinder Singh’s Sardar Ji Travels provided a fantastic experience! Our driver Rahul Shukla was not only courteous and punctual but also offered great local insights. The vehicle was clean and well-maintained, making our trip enjoyable. I will definitely choose Sardar Ji Travels again!",
     rating: 5,
   },
   {
     id: 3,
     name: "Chandan Verma",
     feedback:
-    "Dabbi Chal is a game-changer in taxi services. Tejinder Singh ensures that every ride is comfortable and hassle-free. Our driver, Rahul Shukla, was excellent—punctual, friendly, and knowledgeable. Highly recommend Dabbi Chal for anyone looking for reliable travel solutions.",
+    "Sardar Ji Travels is a game-changer in taxi services. Tejinder Singh ensures that every ride is comfortable and hassle-free. Our driver, Rahul Shukla, was excellent—punctual, friendly, and knowledgeable. Highly recommend Sardar Ji Travels for anyone looking for reliable travel solutions.",
     rating: 5,
   },
     {
     id: 4,
     name: "Bittu Singh",
     feedback:
-      "A big thanks to Tejinder Singh and Dabbi Chal for their impeccable service! The Innova Crysta was in pristine condition, and Rahul Shukla was an amazing driver—professional, accommodating, and friendly. Our trip was made even better with such great service. Will use again!",
+      "A big thanks to Tejinder Singh and Sardar Ji Travels for their impeccable service! The Innova Crysta was in pristine condition, and Rahul Shukla was an amazing driver—professional, accommodating, and friendly. Our trip was made even better with such great service. Will use again!",
     rating: 5,
   },
     {
     id: 5,
     name: "Sunshine Sshines",
     feedback:
-    "If you want a reliable, comfortable, and friendly ride, Dabbi Chal is the service to choose! Tejinder Singh has built a fantastic service, with Rahul Shukla providing excellent driving and helpful tips. The vehicle was clean, and we felt safe throughout the journey.",
+    "If you want a reliable, comfortable, and friendly ride, Sardar Ji Travels is the service to choose! Tejinder Singh has built a fantastic service, with Rahul Shukla providing excellent driving and helpful tips. The vehicle was clean, and we felt safe throughout the journey.",
     rating: 5,
   },
 ];

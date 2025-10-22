@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="text-center">
           <Image
             src="/logo.png"
-            alt="Dabbi Chal"
+            alt="Sardar Ji Travels"
             sizes="192x192"
             className="mx-auto mb-4 rounded-lg w-56"
              width={600} // must give width
@@ -62,15 +62,15 @@ export default function Footer() {
            <a href="mailto:neerajm1264@gmail.com">
           <p className="text-base text-paragraph">neerajm1264@gmail.com</p>
           </a>
-          <a href="tel:+917015516336">
-          <p className="text-base">+91 7015516336, +91 7015823645</p>
+          <a href="tel:+919034653455">
+          <p className="text-base">+91 9034653455, +91 9518131347</p>
           </a>
         </Reveal>
       </div>
 
       {/* Bottom bar */}
       <Reveal className="bg-neutral-950 text-center py-4 text-base text-gray-400 relative">
-        <p>Copyright © 2025 Dabbi Chal. All Rights Reserved.</p>
+        <p>Copyright © 2025 Sardar Ji Travels. All Rights Reserved.</p>
         <p className="mt-1">Designed by: Neeraj Manchanda</p>
 
       </Reveal>
