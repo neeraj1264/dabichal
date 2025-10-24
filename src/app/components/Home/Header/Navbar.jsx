@@ -112,13 +112,13 @@ export default function Navbar() {
           : "bg-white border-b shadow-sm"
       }`}>
         <div className="mx-auto max-w-7xl px-4 sm:px-14">
-          <div className="flex h-20 items-center justify-between">
+          <div className="flex h-28 items-center justify-between">
             {/* logo */}
             <div className="flex items-center gap-4">
               <Link href="/" className="flex items-center gap-3">
                 <div className="h-28 w-32 relative overflow-hidden">
                   {/* put /logo.png in public/ */}
-                  <Image src="/logo.png"  alt="Sardar Ji Travels" fill sizes="48px" className="object-contain" />
+                  <Image src="/logo.png"  alt="Sardar Ji Travels" fill sizes="128px" className="object-contain" />
                 </div>
               </Link>
             </div>
