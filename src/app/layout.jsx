@@ -8,9 +8,9 @@ import Navbar from "./components/Home/Header/Navbar";
 
 export const metadata = {
   title:
-    "Cab Services",
+    "Sardar Ji Travels",
   description:
-    "Cab Services........",
+    "Sardar Ji Travels..........",
 };
 
 export default function RootLayout({ children }) {
@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="/logo_square.png"
+          href="/logo_square2.jpg"
           sizes="192x192"
           type="image/png"
         />
