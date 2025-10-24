@@ -1,7 +1,7 @@
 export default function manifest() {
   return {
-    name: 'Car Booking',
-    short_name: 'Car Booking Services',
+    name: 'Sardar ji Travels',
+    short_name: 'Sardar ji Travels',
     description: 'Discover a community where independence is cherished. Treasured Care For You offers personalised NDIS support in a caring and welcoming environment for individuals and families',
     start_url: '/',
     display: 'standalone',

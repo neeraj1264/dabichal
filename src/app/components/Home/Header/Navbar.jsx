@@ -32,7 +32,7 @@ const NAV = [
       { label: "12 Seater Tempo Traveller",   href: "/tempo-travellers/12-seater-tempo-traveller" },
       { label: "17 Seater Tempo Traveller",   href: "/tempo-travellers/17-seater-tempo-traveller" },
       { label: "12 Seater Urbania Traveller", href: "/tempo-travellers/12-seater-urbania-traveller" },
-      { label: "12 Seater Urbania Traveller", href: "/tempo-travellers/17-seater-urbania-traveller" },
+      { label: "17 Seater Urbania Traveller", href: "/tempo-travellers/17-seater-urbania-traveller" },
     ],
 
   },

@@ -1,4 +1,5 @@
 "use client";
+import Reveal from "@/app/components/reveal";
 import Image from "next/image";
 import { useParams } from "next/navigation";
 import { useState } from "react";
@@ -7,50 +8,50 @@ const carsData = {
   "innova-hycross": {
     name: "Innova Hycross",
     img: "/cab/cab1.jpg",
-    description: `
-Elevate your travel experience with our Innova Hycross taxi booking service, 
+    description: ` Elevate your travel experience with our Innova Hycross taxi booking service, 
 perfect for family outings, corporate travel, and outstation trips. 
 This premium hybrid SUV combines luxury, fuel efficiency, and advanced features 
 to ensure a smooth and eco-friendly ride.
     `
   },
+    "honda-amaze": {
+    name: "Honda Amaze",
+    img: "/cab/cab7.jpg",
+    description: ` our Honda Amaze fleet is perfect for all your travel needs. Known for its spacious interiors, excellent mileage, and smooth performance, the Honda Amaze ensures a hassle-free ride every time.
+    `
+  },
   "toyota-etios": {
     name: "Toyota Etios",
     img: "/cab/cab2.jpg",
-    description: `
-The Toyota Etios is known for reliability, comfort, and affordability. 
+    description: ` The Toyota Etios is known for reliability, comfort, and affordability. 
 Ideal for city travel or outstation trips with family and friends.
     `
   },
   "innova-crysta": {
     name: "Innova Crysta",
     img: "/cab/cab3.jpg",
-    description: `
-Spacious interiors and powerful performance make the Innova Crysta 
+    description: ` Spacious interiors and powerful performance make the Innova Crysta 
 perfect for group travel and long journeys.
     `
   },
   "maruti-dzire": {
     name: "Maruti Dzire",
     img: "/cab/cab4.jpg",
-    description: `
-Compact and fuel-efficient, the Maruti Dzire is an excellent choice 
+    description: ` Compact and fuel-efficient, the Maruti Dzire is an excellent choice 
 for local travel and business rides.
     `
   },
   "maruti-ertiga": {
     name: "Maruti Ertiga",
     img: "/cab/cab5.jpg",
-    description: `
-The Maruti Ertiga is a 7-seater MPV with comfort and affordability, 
+    description: ` The Maruti Ertiga is a 7-seater MPV with comfort and affordability, 
 perfect for family trips and local sightseeing.
     `
   },
   "kia-carens": {
     name: "Kia Carens",
     img: "/cab/cab6.jpg",
-    description: `
-A stylish and feature-packed MPV, the Kia Carens offers premium interiors 
+    description: ` A stylish and feature-packed MPV, the Kia Carens offers premium interiors 
 and smooth performance for your journey.
     `
   }
@@ -102,6 +103,29 @@ export default function CarDetailPage() {
   };
 
   return (
+    <>
+     <div className="relative w-full h-56 md:h-72 lg:h-24">
+        <Image
+          src="/hero/hero2.jpg"
+          alt={car.name}
+          fill
+          priority
+          className="object-cover"
+        />
+
+        {/* full dark overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+
+        {/* bottom gradient fade */}
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent" />
+
+        {/* centered title */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+          <Reveal className="text-white text-xl md:text-xl lg:text-1xl font-bold drop-shadow-lg">
+            {car.name}
+          </Reveal>
+        </div>
+      </div>
     <section className="bg-gray-50 py-12">
       <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10">
         {/* Car Info */}
@@ -113,7 +137,7 @@ export default function CarDetailPage() {
             height={400}
             className="rounded-xl shadow-md mb-6"
           />
-          <h1 className="text-3xl font-bold mb-4">{car.name}</h1>
+          <Reveal className="text-3xl font-bold ">{car.name}</Reveal>
           <p className="text-gray-700 leading-relaxed whitespace-pre-line">
             {car.description}
           </p>
@@ -195,5 +219,6 @@ export default function CarDetailPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }
