@@ -16,15 +16,15 @@ export default function Footer() {
              width={600} // must give width
              height={400}
           />
-          <p className="text-base leading-relaxed text-paragraph">
-            Enjoy effortless Taxi booking in Chandigarh / Mohali / Zirakpur /
+          <p className="text-base leading-relaxed text-paragraph text-left">
+            Enjoy effortless Taxi booking in Chandigarh/ Mohali/ Zirakpur/
             Panchkula and tours in Chandigarh with our reliable, hassle-free
             one-way cab services.
           </p>
         </div>
 
         {/* Quick Links */}
-        <Reveal className="text-center">
+        <Reveal className="text-left">
           <h3 className="text-white font-semibold mb-4 text-xl">Quick Links</h3>
           <ul className="space-y-2 text-base text-paragraph">
             <li>About Us</li>
@@ -39,7 +39,7 @@ export default function Footer() {
         </Reveal>
 
         {/* Taxi Services */}
-        <Reveal className="text-center">
+        <Reveal className="text-left">
           <h3 className="text-white font-semibold mb-4 text-xl">Taxi Services</h3>
           <ul className="space-y-2 text-base text-paragraph">
             <li>Innova Hycross</li>
@@ -53,7 +53,7 @@ export default function Footer() {
         </Reveal>
 
         {/* Contact + Location */}
-        <Reveal className="text-center">
+        <Reveal className="text-left">
           <h3 className="text-white font-semibold mb-2 text-xl">Locations:</h3>
           <p className="text-base mb-4 text-paragraph">
             80/2, Village Burail, Sector 45, Chandigarh 160047

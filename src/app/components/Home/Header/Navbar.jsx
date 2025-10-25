@@ -106,21 +106,16 @@ export default function Navbar() {
       {/* top bars */}
 
       {/* main nav */}
-      <nav className={`w-full z-50 transition-all duration-300 ${
+      <nav className={`w-full z-50 transition-all duration-300 rounded-t-none rounded-b-[1rem] border-none ${
         isFixed
-          ? "fixed top-0 left-0 bg-white shadow-lg"
+          ? "fixed top-0 left-0 bg-white shadow-2xl"
           : "bg-white border-b shadow-sm"
       }`}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-14">
-          <div className="flex h-20 items-center justify-between">
+        <div className="mx-auto max-w-7xl px-4 sm:pr-14 sm:pl-8">
+          <div className="flex h-16 sm:h-20 items-center justify-between">
             {/* logo */}
             <div className="flex items-center gap-4">
-              <Link href="/" className="flex items-center gap-3">
-                <div className="h-28 w-32 relative overflow-hidden">
-                  {/* put /logo.png in public/ */}
-                  <Image src="/logo.png"  alt="Sardar Ji Travels" fill sizes="128px" className="object-contain" />
-                </div>
-              </Link>
+             <Link href="/" className="text-orange text-xl font-bold">Sardar Ji Travels</Link>
             </div>
 
             {/* center links */}
