@@ -92,8 +92,8 @@ export default function WelcomeSection() {
             We understand that travel needs vary, and that’s why we offer both
             one-way and round-trip rentals to cater to your specific
             requirements. Whether you’re looking for a one-way ride from
-            Chandigarh to your destination or need a round-trip service, Dabbi
-            Chal is here to provide tailored solutions that suit your
+            Chandigarh to your destination or need a round-trip service, Sardar Ji Travels
+            is here to provide tailored solutions that suit your
             preferences.
           </Reveal>
 

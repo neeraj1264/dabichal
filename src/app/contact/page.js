@@ -86,10 +86,10 @@ export default function ContactPage() {
                 <span className="text-black text-xl font-bold">Mail</span>
                 <br />
                 <a
-                  href="mailto:dabbichalcab@gmail.com"
+                  href="mailto:neerajm1264@gmail.com"
                   className="hover:underline"
                 >
-                  dabbichalcab@gmail.com
+                  neerajm1264@gmail.com
                 </a>
               </p>
             </div>
