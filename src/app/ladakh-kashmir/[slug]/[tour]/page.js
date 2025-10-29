@@ -7,13 +7,6 @@ import { ladakhKashmirTours } from "@/app/components/data/tours";
 
 export default function TourDetail({ params }) {
   const { slug, tour } = params;
-  const cat = ladakhKashmirTours.find((c) => c.slug === slug);
-  if (!cat) return <div className="p-10 text-center">Category not found.</div>;
-
-  const t = cat.tours.find((x) => x.slug === tour);
-  if (!t) return <div className="p-10 text-center">Tour not found.</div>;
-
-  const related = cat.tours.filter((x) => x.slug !== t.slug);
 
   const [form, setForm] = useState({
     name: "",
@@ -52,6 +45,14 @@ Message: ${form.message}
     window.open(url, "_blank");
   }
 
+    const cat = ladakhKashmirTours.find((c) => c.slug === slug);
+  if (!cat) return <div className="p-10 text-center">Category not found.</div>;
+
+  const t = cat.tours.find((x) => x.slug === tour);
+  if (!t) return <div className="p-10 text-center">Tour not found.</div>;
+
+  const related = cat.tours.filter((x) => x.slug !== t.slug);
+  
   // helper to get day keys sorted
   const dayKeys = Object.keys(t)
     .filter((k) => /^day\d+$/.test(k) && t[k])

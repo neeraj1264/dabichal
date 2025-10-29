@@ -9,7 +9,6 @@ export default function TourPage({ params }) {
   const { slug } = params;
   const tour = himachalPilgrimTours.find((t) => t.slug === slug);
 
-  if (!tour) return <div className="p-10 text-center">Tour not found.</div>;
 
   const related = himachalPilgrimTours.filter((t) => t.slug !== slug);
   // booking form state
@@ -46,10 +45,7 @@ Message: ${form.message}
     window.open(url, "_blank");
   }
 
-  // related list exclude current slug (just show all other tours)
-  // const related = Object.entries(tour)
-  //   .filter(([key]) => key !== slug)
-  //   .map(([slugKey, data]) => ({ slug: slugKey, ...data }));
+  if (!tour) return <div className="p-10 text-center">Tour not found.</div>;
 
   if (tour.slug === "pilgrim-tours") {
   // show all other tours as cards (you can change the filter to pick specific pilgrim items)
