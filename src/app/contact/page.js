@@ -8,6 +8,8 @@ import {
   FaInstagram,
   FaShareAlt,
 } from "react-icons/fa";
+import Reveal from "../components/reveal";
+import Image from "next/image";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -44,6 +46,18 @@ export default function ContactPage() {
   };
 
   return (
+    <>
+  {/* Hero */}
+      <div className="relative w-full h-24">
+        <Image src="/hero/hero2.jpg" alt="Contact Us" fill priority className="object-cover" />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent" />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none px-4">
+          <Reveal className="text-white text-lg md:text-2xl font-bold drop-shadow-lg">
+            Contact Us
+          </Reveal>
+        </div>
+      </div>
     <section className="bg-white py-16">
       <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 items-start">
         {/* Left Section */}
@@ -179,5 +193,6 @@ export default function ContactPage() {
         </div>
       </div>
     </section>
+    </>
   );
 }

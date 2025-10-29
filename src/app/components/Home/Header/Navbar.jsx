@@ -40,12 +40,12 @@ const NAV = [
     label: "Himachal/Pilgrim",
     href: "/himachal-pilgrim",
     items: [
-      { label: "Chandigarh With DharamShala", href: "/himachal-pilgrim/amritsar-with-dharamshala" },
-      { label: "Chandigarh Dalhousie DharamShala Tour", href: "/himachal-pilgrim/amritsar-dalhousie-dharamshala-tour" },
-      { label: "Chandigarh Dalhousie DharamShala Manali Chandigarh", href: "/himachal-pilgrim/amritsar-dalhousie-dharamshala-manali-chandigarh" },
-      { label: "Chandigarh Shimla Manali Chandigarh", href: "/himachal-pilgrim/amritsar-shimla-manali-chandigarh" },
-      { label: "Chandigarh Kasol Manali Chandigarh", href: "/himachal-pilgrim/chandigarh-kasol-manali-chandigarh" },
-      { label: "Pilgrim Tours", href: "/himachal-pilgrim/pilgrim" },
+      { label: "Chandigarh With DharamShala",                       href: "/himachal-pilgrim/chandigarh-with-dharamshala" },
+      { label: "Chandigarh Dalhousie DharamShala Tour",             href: "/himachal-pilgrim/chandigarh-dalhousie-dharamshala-tour" },
+      { label: "Chandigarh Dalhousie DharamShala Manali Chandigarh",href: "/himachal-pilgrim/chandigarh-dalhousie-dharamshala-manali-chandigarh" },
+      { label: "Chandigarh Shimla Manali Chandigarh",               href: "/himachal-pilgrim/chandigarh-shimla-manali-chandigarh" },
+      { label: "Chandigarh Kasol Manali Chandigarh",                href: "/himachal-pilgrim/chandigarh-kasol-manali-chandigarh" },
+      { label: "Pilgrim Tours",                                     href: "/himachal-pilgrim/pilgrim-tours" },
 
     ],
   },
