@@ -144,7 +144,7 @@ Message: ${form.message}
       const idx = dayKey.replace("day", "");
       const title = tour[dayKey];
       const desc = tour[`desk${idx}`];
-      const dayImg = tour[`img${idx}`] || tour.image;
+      const dayImg = tour[`img${idx}`];
 
       return (
         <article
@@ -154,7 +154,7 @@ Message: ${form.message}
           <div className="p-6">
             {/* Image: full-width on xs, float-right on sm+ so text wraps around it */}
             {dayImg && (
-              <div className="mb-4 sm:ml-6 sm:mb-0 sm:float-right sm:w-40 sm:h-28 w-full h-44 overflow-hidden rounded-sm border">
+              <div className="mb-4 sm:ml-6 sm:mb-0 sm:float-right sm:w-40 sm:h-28 w-full h-44 overflow-hidden rounded-sm">
                 {/* using width/height props instead of fill for predictable sizing */}
                 <Image
                   src={dayImg}
