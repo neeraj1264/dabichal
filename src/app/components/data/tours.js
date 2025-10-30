@@ -92,7 +92,7 @@ export const himachalPilgrimTours = [
   {
     slug: "chandigarh-kasol-manali-chandigarh",
     title: "Chandigarh Kasol Manali Chandigarh",
-    // image: "/himachal/h3.jpg",
+    image: "/himachal/h3.jpg",
     daynight: "5 Nights / 6 Days",
     days:"  ",
     img1:"/himachal/h16.jpg",
@@ -120,7 +120,68 @@ export const himachalPilgrimTours = [
   },
 ];
 
-
+export const pilgrimTours = [
+{
+    slug: "9-devi-darshan-tour",
+    title: "9 Devi Darshan Tour",
+    image: "/himachal/p1.jpg",
+    description:"Embark on a divine journey with the Chandigarh 9 Devi Darshan Tour Package by Dabbi Chal. This spiritual yatra takes you to some of the most revered temples, including Mata Mansa Devi Temple, Chintpurni, Naina Devi Temple, Chamunda Devi Temple, Mata Jwala Ji Temple, and Brijeshwari Temple. Experience the tranquility and devotion of these sacred sites as you travel through the serene landscapes of Himachal Pradesh and Punjab. Each temple on this pilgrimage holds unique significance and offers blessings for prosperity, health, and well-being. At Dabbi Chal, we prioritize your comfort with well-maintained vehicles and experienced drivers to ensure a hassle-free journey. Our 9 Devi Darshan Yatra package is thoughtfully designed for devotees seeking a seamless spiritual experience. With competitive pricing and exceptional service, we make your religious trip memorable and fulfilling. Book your Chandigarh 9 Devi Darshan Tour with Dabbi Chal today for a divine journey filled with peace and devotion."
+    },
+  {
+    slug: "chandigarh-vaishno-devi-tour",
+    title: "Chandigarh Vaishno Devi Tour",
+    image: "/himachal/p2.jpg",
+    description:"Embark on a divine journey with Dabbi Chal's taxi services from Chandigarh to Vaishno Devi, Katra, and Jammu. Our reliable taxi rentals ensure a seamless travel experience, allowing you to focus on your spiritual journey. With well-maintained vehicles and experienced drivers, we provide a comfortable and safe ride through scenic routes. Whether you're traveling with family or friends, our customizable options cater to your travel preferences, ensuring a hassle-free pilgrimage. Choose Dabbi Chal for your Chandigarh to Vaishno Devi taxi booking, and enjoy competitive pricing and exceptional service. From doorstep pickup to convenient drop-offs, we prioritize customer satisfaction at every step. Our taxis are equipped with modern amenities, making your journey enjoyable and relaxing. Book your ride today and let Dabbi Chal take care of your travel needs for a memorable Vaishno Devi darshan."
+  },
+  {
+    slug: "char-dham-yatra-tour",
+    title: "Char Dham Yatra Tour",
+    image: "/himachal/p3.jpg",
+    daynight: "11 Nights / 12 Days",
+    day1:"Day 1: chandigarh-Haridwar",
+    desk1:"Today start your journey to Haridwar from Chandigarh. On arrival Haridwar check-in at our preferred hotel. In the evening attend the Ganga Aarti at Har-Ki-Pauri. Later back to the hotel for Dinner and an overnight stay at the hotel.",
+    day2:"Day 2: Haridwar - Barkot",
+    desk2:"Start drive from Haridwar to Barkot via Dehradun and Mussoorie. On arrival check into the hotel for an overnight stay.",
+    day3:"Day 3: Barkot - Jankichatti",
+    desk3:"After breakfast drive towards Janki Chatti. On arrival, begin a 6 Km trek to Yamunotri. Once you reach, visit the main Yamunotri temple for Darshan; and seek the blessings of Goddess Yamuna Ji. After paying homage, trek back to Janki Chatti. From here, drive back to Barkot. Dinner & overnight stay in the hotel.",
+    day4:"Day 4: Barkot - Uttarkashi",
+    desk4:"After breakfast drive to Uttarkashi. On arrival check-in at the hotel. In the evening visit the famous Kashi Vishwanath Temple. Dinner & Overnight stay at the hotel.",
+    day5:"Day 5: Uttarkashi - Gangotri",
+    desk5:"In the morning after an early breakfast, drive towards Gangotri. Upon arrival, take a holy dip in the river Ganges & offer prayer to the Goddess Ganges. After Darshan, drive back to Uttarkashi. Dinner & overnight stay at the hotel.",
+    day6:"Day 6: Uttarkashi - Guptkashi",
+    desk6:"After breakfast drive towards Guptkashi. Upon arrival check-in at the hotel. Dinner &overnight stay at the hotel.",
+    day7:"Day 7: Guptkashi - Gaurikund",
+    desk7:"Start the drive to Gaurikund. Upon arrival, start your journey on the zigzag and well-laid trail to Kedarnath, you can either opt for trekking or there are other options of pony or horse or Doli available on rent. On arrival, proceed to the holy Darshan of Kedarnath Temple. After seeking the blessing return back to Guptkashi for an overnight stay.",
+    day8:"Day 8: Kedarnath-Guptkashi",
+    desk8:"Today walk up early in the morning & participate in the arti at and Abhishek at Kedarnath temple & take blessing from Kedarnath Ji. Latter after breakfast trek down to Gaurikund follow by the same way where you come from. On arrival, Gaurikund Drive to Guptkashi and check into a hotel followed by dinner & overnight stay.",
+    day9:"Day 9: Guptkashi - Badrinath",
+    desk9:"After breakfast drive to Badrinath. On arrival check into a hotel. In the evening attend the Arti ceremony of Badrinath Ji. Dinner & overnight stay.",
+    day10:"Day 10: Badrinath - Rudraprayag",
+    desk10:"After morning Darshan of Badrinath Ji, return back to the hotel for breakfast & check out. Optional: Visit Mana Village. Later drive to Rudraprayag. On arrival check-in at the hotel. Evening at the leisure. Dinner & overnight stay at the hotel.",
+    day11:"Day 11: Rudraprayag - Haridwar",
+    desk11:"After breakfast, start the drive to Haridwar. En-route visit famous places of Rishikesh l.e. Ram Jhula, Laxman Jhula, and Triveni Ghat. Later Continue forward to Haridwar. Dinner & overnight stay at the hotel.",
+    day12:"Day 12: Haridwar-chandigarh",
+    desk12:"After breakfast, start to drive to Chandigarh. On arrival, it's time to conclude the lifetime religious tour of Chardham.",
+    img1:"/himachal/c1.jpg",
+    img2:"/himachal/c2.jpg",
+    img3:"/himachal/c3.jpg",
+    img4:"/himachal/c4.jpg",
+    img5:"/himachal/c5.jpg",
+    img6:"/himachal/c6.jpg",
+    img7:"/himachal/c7.jpg",
+    img8:"/himachal/c8.jpg",
+    img9:"/himachal/c9.jpg",
+    img10:"/himachal/c10.jpg",
+    img11:"/himachal/c11.jpg",
+  },
+  {
+    slug: "gurudwaras-darshan-tours",
+    title: "Gurudwaras Darshan Tours",
+    image: "/himachal/p4.jpg",
+    description:
+      "Explore the divine serenity of the iconic gurdwaras with Dabbi Chal's Chandigarh Gurdwara Tour Taxi Service. Our reliable and affordable taxi rental service takes you to the most revered gurdwaras in and around Chandigarh, including Gurdwara Nada Sahib, Gurdwara Sri Amb Sahib, and Gurdwara Baoli Sahib. Designed to provide a peaceful and enriching experience, our tour allows devotees to immerse themselves in spirituality while enjoying a hassle-free journey. With well-maintained vehicles and professional drivers, Dabbi Chal ensures your comfort and convenience throughout the sacred trip. Discover the spiritual essence of Chandigarh with Dabbi Chal's taxi hire for gurdwara tours, tailored to meet the needs of individual travelers, families, and groups. Our services promise a smooth, on-time journey, allowing you to focus on prayers and reflection. Whether you're planning a day trip or a weekend tour, Dabbi Chal offers flexible options to suit your schedule. Book your Chandigarh Gurdwara Taxi Service today for an unforgettable experience that blends devotion, comfort, and seamless travel.",
+  },
+]
 // /app/components/data/ladakhKashmir.js
 export const ladakhKashmirTours = [
   {
