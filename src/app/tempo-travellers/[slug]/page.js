@@ -76,7 +76,7 @@ export default function TempoDetailPage() {
 📍 Pickup: ${formData.pickup}
 📝 Message: ${formData.message}
 
-🔗 Website: https://dabichal.vercel.app/
+🔗 Website: www.sardarjitourandtravels.in
     `;
 
     const whatsappUrl =
