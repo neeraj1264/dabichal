@@ -180,14 +180,14 @@ export default function ContactPage() {
             <textarea
               name="message"
               placeholder="Write Your Message Here"
-              className="w-full border-b bg-light border-paragraph focus:border-[#f58220] outline-none py-2 h-24 resize-none"
+              className="w-full border-b bg-light border-paragraph focus:border-orange outline-none py-2 h-24 resize-none"
               value={formData.message}
               onChange={handleChange}
             ></textarea>
 
             <button
               type="submit"
-              className="bg-[#f58220] text-white px-6 py-2 rounded-full hover:bg-orange-600 transition"
+              className="bg-orange text-white px-6 py-2 rounded-full hover:bg-orange-600 transition"
             >
               Submit
             </button>

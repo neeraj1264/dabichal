@@ -138,94 +138,114 @@ export default function CarDetailPage() {
         </div>
       </div>
       <section className="bg-gray-50 md:p-12 py-12">
-        <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10">
+        <div className="container mx-auto px-6 grid md:grid-cols-3 gap-10">
           {/* Car Info */}
-          <div>
+          <div className="md:col-span-2">
             <Reveal className="text-2xl font-bold ">{car.name}</Reveal>
-            <Image
-              src={car.img}
-              alt={car.name}
-              width={600}
-              height={400}
-              className="rounded-xl shadow-md mb-6"
-            />
-            <p className="text-paragraph text-sm leading-relaxed whitespace-pre-line">
-              {car.description}
-            </p>
+            <div className="mb-6">
+              <Reveal className="sm:block mb-4 sm:float-right sm:ml-6 sm:w-56 sm:h-36 overflow-hidden rounded">
+                <Image
+                  src={car.img}
+                  alt={car.name}
+                  width={448}
+                  height={288}
+                  className="rounded-xl shadow-md mb-6"
+                />
+              </Reveal>
+              <p className="text-paragraph text-base leading-relaxed whitespace-pre-line">
+                {car.description}
+              </p>
+              {/* itinerary or extra details (if any) - keep below description */}
+              {car.itinerary && (
+                <div className="mt-6">
+                  <h3 className="font-semibold mb-2">Itinerary</h3>
+                  <p className="text-sm text-gray-700 leading-relaxed">
+                    {car.itinerary}
+                  </p>
+                </div>
+              )}
+
+              {/* clear float so following blocks don't wrap */}
+              <div className="clear-both" />
+            </div>
           </div>
 
           {/* Booking Form */}
-          <div className="bg-white rounded-xl shadow-lg p-6">
-            <h2 className="text-2xl font-semibold mb-4">Book {car.name}</h2>
-            <form onSubmit={handleSubmit} className="space-y-4">
-              <input
-                type="text"
-                name="name"
-                placeholder="Your Name"
-                className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
-                value={formData.name}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="email"
-                name="email"
-                placeholder="Email Address"
-                className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
-                value={formData.email}
-                onChange={handleChange}
-                required
-              />
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
-                value={formData.phone}
-                onChange={handleChange}
-                required
-              />
-              <div className="grid grid-cols-2 gap-2">
-                <input
-                  type="date"
-                  name="startDate"
-                  placeholder="Start Date"
-                  className="w-full border rounded p-2 bg-border border-none placeholder-paragraph bg-white"
-                  value={formData.startDate}
-                  onChange={handleChange}
-                />
-                <input
-                  type="date"
-                  name="endDate"
-                  placeholder="End Date"
-                  className="w-full border rounded p-2 bg-border border-none placeholder-paragraph bg-white"
-                  value={formData.endDate}
-                  onChange={handleChange}
-                />
+          <aside>
+            <div className="sticky top-6">
+              <div className="bg-white rounded-xl shadow-lg p-6">
+                <h2 className="text-2xl font-semibold mb-4">Book {car.name}</h2>
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                    className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
+                    value={formData.phone}
+                    onChange={handleChange}
+                    required
+                  />
+                  <div className="grid grid-cols-2 gap-2">
+                    <input
+                      type="date"
+                      name="startDate"
+                      placeholder="Start Date"
+                      className="w-full border rounded p-2 bg-border border-none placeholder-paragraph bg-white"
+                      value={formData.startDate}
+                      onChange={handleChange}
+                    />
+                    <input
+                      type="date"
+                      name="endDate"
+                      placeholder="End Date"
+                      className="w-full border rounded p-2 bg-border border-none placeholder-paragraph bg-white"
+                      value={formData.endDate}
+                      onChange={handleChange}
+                    />
+                  </div>
+                  <input
+                    type="text"
+                    name="pickup"
+                    placeholder="Pick-Up Location"
+                    className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
+                    value={formData.pickup}
+                    onChange={handleChange}
+                  />
+                  <textarea
+                    name="message"
+                    placeholder="Write Message"
+                    className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
+                    value={formData.message}
+                    onChange={handleChange}
+                  ></textarea>
+                  <button
+                    type="submit"
+                    className="bg-[#f58220] text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition"
+                  >
+                    Submit on WhatsApp
+                  </button>
+                </form>
               </div>
-              <input
-                type="text"
-                name="pickup"
-                placeholder="Pick-Up Location"
-                className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
-                value={formData.pickup}
-                onChange={handleChange}
-              />
-              <textarea
-                name="message"
-                placeholder="Write Message"
-                className="w-full border rounded p-2 bg-border border-none placeholder-paragraph"
-                value={formData.message}
-                onChange={handleChange}
-              ></textarea>
-              <button
-                type="submit"
-                className="bg-[#f58220] text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition"
-              >
-                Submit on WhatsApp
-              </button>
-            </form>
-          </div>
+            </div>
+          </aside>
         </div>
         {/* Related block */}
         <div className="container mx-auto px-6 mt-8">

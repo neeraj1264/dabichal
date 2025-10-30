@@ -56,14 +56,23 @@ export default function Footer() {
         <Reveal className="text-left">
           <h3 className="text-white font-semibold mb-2 text-xl">Locations:</h3>
           <p className="text-base mb-4 text-paragraph">
-            80/2, Village Burail, Sector 45, Chandigarh 160047
+            Shop No 5, New Defence Colony, Near Sbi Bank, Zirakpur
           </p>
           <h3 className="text-white font-semibold mb-2">Contact</h3>
            <a href="mailto:mmankarnsingh12@gmail.com">
           <p className="text-base text-paragraph">mmankarnsingh12@gmail.com</p>
           </a>
-          <a href="tel:+919034653455">
-          <p className="text-base">+91 9034653455, +91 9518131847</p>
+          <a href="tel:+919518131847">
+          <p className="text-base text-paragraph">+91 9518131847</p>
+          </a>
+            <a href="tel:+919034653455">
+          <p className="text-base text-paragraph">+91 9034653455</p>
+          </a>
+            <a href="tel:+917494851984">
+          <p className="text-base text-paragraph">+91 7494851984</p>
+          </a>
+           <a href="tel:+918284816856">
+          <p className="text-base text-paragraph">+91 8284816856</p>
           </a>
         </Reveal>
       </div>

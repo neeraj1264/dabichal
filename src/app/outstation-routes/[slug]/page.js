@@ -63,93 +63,68 @@ export default function OutstationDetailPage() {
         </div>
       </div>
 
-      {/* Main */}
+     {/* main */}
       <section className="bg-gray-50 md:p-12 py-12">
-        <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10">
-          {/* Left: route info */}
-          <div>
+        <div className="container mx-auto px-6 grid md:grid-cols-3 gap-10">
+          {/* LEFT: content with floated image on md+ */}
+          <div className="md:col-span-2">
             <Reveal className="text-2xl font-bold mb-4">{route.title}</Reveal>
 
-            <Image
-              src={route.image}
-              alt={route.title}
-              width={900}
-              height={500}
-              className="rounded-xl shadow-md mb-6 object-cover"
-            />
+            {/* Floated image: shows on sm+ as fixed size on right, mobile shows image above content */}
+            <div className="mb-6">
 
-            <p className="text-paragraph text-sm leading-relaxed whitespace-pre-line">
-              {route.description || "No description available for this route."}
-            </p>
+              {/* Floated thumbnail on sm+ (text will wrap) */}
+              <Reveal className="sm:block mb-4 sm:float-right sm:ml-6 sm:w-56 sm:h-36 overflow-hidden rounded">
+                <Image
+                  src={route.image}
+                  alt={route.title}
+                  width={448}
+                  height={288}
+                  className="object-cover w-full h-full"
+                />
+              </Reveal>
+
+              {/* Description / text — will wrap around floated image on sm+ */}
+              <p className="text-paragraph text-base leading-relaxed whitespace-pre-line">
+                {route.description || "No description available for this route."}
+              </p>
+
+              {/* itinerary or extra details (if any) - keep below description */}
+              {route.itinerary && (
+                <div className="mt-6">
+                  <h3 className="font-semibold mb-2">Itinerary</h3>
+                  <p className="text-sm text-gray-700 leading-relaxed">{route.itinerary}</p>
+                </div>
+              )}
+
+              {/* clear float so following blocks don't wrap */}
+              <div className="clear-both" />
+            </div>
           </div>
 
-          {/* Right: booking form (sticky) */}
-          <div className="md:col-span-1">
+          {/* RIGHT: booking form */}
+          <aside>
             <div className="sticky top-6">
               <div className="bg-white rounded-xl shadow-lg p-6">
-                <h2 className="text-2xl font-semibold mb-4">Book {route.title}</h2>
-
+                <h3 className="text-xl font-semibold mb-4">Book {route.title}</h3>
                 <form onSubmit={handleSubmit} className="space-y-3">
-                  <input
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    placeholder="Your Name"
-                    className="w-full border rounded p-2 text-sm"
-                    required
-                  />
-                  <input
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    placeholder="Email Address"
-                    className="w-full border rounded p-2 text-sm"
-                  />
-                  <input
-                    name="phone"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    placeholder="Phone Number"
-                    className="w-full border rounded p-2 text-sm"
-                    required
-                  />
-                  <input
-                    name="from"
-                    value={formData.from}
-                    onChange={handleChange}
-                    placeholder="You Are From?"
-                    className="w-full border rounded p-2 text-sm"
-                  />
                   <div className="grid grid-cols-2 gap-2">
-                    <input
-                      type="date"
-                      name="startDate"
-                      value={formData.startDate}
-                      onChange={handleChange}
-                      className="w-full border rounded p-2 text-sm bg-white"
-                    />
-                    <input
-                      type="date"
-                      name="endDate"
-                      value={formData.endDate}
-                      onChange={handleChange}
-                      className="w-full border rounded p-2 text-sm bg-white"
-                    />
+                    <input name="name" value={formData.name} onChange={handleChange} placeholder="Your Name" className="w-full bg-border text-paragraph rounded p-2 text-sm" required />
+                    <input name="email" value={formData.email} onChange={handleChange} placeholder="Email Address" className="w-full bg-border text-paragraph rounded p-2 text-sm" />
                   </div>
-                  <input
-                    name="pickup"
-                    value={formData.pickup}
-                    onChange={handleChange}
-                    placeholder="Pick-Up Location"
-                    className="w-full border rounded p-2 text-sm"
-                  />
-                  <textarea
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    placeholder="Write Message"
-                    className="w-full border rounded p-2 text-sm h-20 resize-none"
-                  />
+
+                  <div className="grid grid-cols-2 gap-2">
+                    <input name="phone" value={formData.phone} onChange={handleChange} placeholder="Phone Number" className="w-full bg-border text-paragraph rounded p-2 text-sm" required />
+                    <input name="from" value={formData.from} onChange={handleChange} placeholder="You Are From?" className="w-full bg-border text-paragraph rounded p-2 text-sm" />
+                  </div>
+
+                  <div className="grid grid-cols-2 gap-2">
+                    <input type="date" name="startDate" value={formData.startDate} onChange={handleChange} className="w-full bg-border text-paragraph rounded p-2 text-sm bg-white" />
+                    <input type="date" name="endDate" value={formData.endDate} onChange={handleChange} className="w-full bg-border text-paragraph rounded p-2 text-sm bg-white" />
+                  </div>
+
+                  <input name="pickup" value={formData.pickup} onChange={handleChange} placeholder="Pick-Up Location" className="w-full bg-border text-paragraph rounded p-2 text-sm" />
+                  <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Write Message" className="w-full bg-border text-paragraph rounded p-2 text-sm h-24 resize-none" />
 
                   <button className="w-full bg-[#f58220] text-white py-2 rounded hover:brightness-95 transition" type="submit">
                     Submit on WhatsApp
@@ -157,10 +132,10 @@ export default function OutstationDetailPage() {
                 </form>
               </div>
             </div>
-          </div>
+          </aside>
         </div>
 
-        {/* Related block */}
+        {/* Related */}
         <div className="container mx-auto px-6 mt-8">
           <div className="bg-white border-2 border-border rounded-lg p-4">
             <div className="flex items-center gap-3 mb-4">
@@ -179,10 +154,7 @@ export default function OutstationDetailPage() {
 
                   <div className="flex-1">
                     <h4 className="text-lg font-bold">{r.title}</h4>
-                    <Link
-                      href={`/outstation-routes/${r.slug}`}
-                      className="text-base font-bold mt-2 inline-block text-[#f58220] hover:underline"
-                    >
+                    <Link href={`/outstation-routes/${r.slug}`} className="text-base font-bold mt-2 inline-block text-[#f58220] hover:underline">
                       Book Now
                     </Link>
                   </div>

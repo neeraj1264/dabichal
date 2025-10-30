@@ -1,4 +1,5 @@
 import { ladakhKashmirTours } from "@/app/components/data/tours";
+import Reveal from "@/app/components/reveal";
 import Image from "next/image";
 import Link from "next/link";
 import { FaGreaterThan } from "react-icons/fa6";
@@ -19,12 +20,12 @@ export default function CategoryPage({ params }) {
         <div className="absolute inset-0 bg-black/50" />
         <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-          <h1 className="text-white text-xl md:text-2xl font-bold">{cat.title}</h1>
+          <Reveal className="text-white text-xl md:text-2xl font-bold">{cat.title}</Reveal>
         </div>
       </div>
 
       <main className="container mx-auto px-6 pb-20">
-        <h2 className="text-2xl font-semibold text-center mb-12">{cat.title}</h2>
+        <Reveal className="text-2xl font-semibold text-center mb-12">{cat.title}</Reveal>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {cat.tours.map((t) => (

@@ -114,25 +114,43 @@ export default function TempoDetailPage() {
               </Reveal>
             </div>
           </div>
-    <section className="bg-gray-50 md:p-12 py-12">
-      <div className="container mx-auto px-6 grid md:grid-cols-2 gap-10">
-        {/* Vehicle Info */}
-        <div>
+ <section className="bg-gray-50 md:p-12 py-12">
+        <div className="container mx-auto px-6 grid md:grid-cols-3 gap-10">
+          {/* LEFT: content with floated image on md+ */}
+          <div className="md:col-span-2">
           <Reveal className="text-2xl font-bold mb-4">{tempo.name}</Reveal>
+  <div className="mb-6">
+                        <Reveal className="sm:block mb-4 sm:float-right sm:ml-6 sm:w-56 sm:h-36 overflow-hidden rounded">
           <Image
             src={tempo.img}
             alt={tempo.name}
-            width={600}
-            height={400}
-            className="rounded-xl shadow-md mb-6"
+           width={448}
+           height={288}
+           className="object-cover w-full h-full"
           />
-          <p className="text-paragraph text-sm leading-relaxed whitespace-pre-line">
-            {tempo.description}
-          </p>
+          </Reveal>
+            {/* Description / text — will wrap around floated image on sm+ */}
+              <p className="text-paragraph text-base leading-relaxed whitespace-pre-line">
+                {tempo.description || "No description available for this route."}
+              </p>
+
+              {/* itinerary or extra details (if any) - keep below description */}
+              {tempo.itinerary && (
+                <div className="mt-6">
+                  <h3 className="font-semibold mb-2">Itinerary</h3>
+                  <p className="text-sm text-gray-700 leading-relaxed">{tempo.itinerary}</p>
+                </div>
+              )}
+
+              {/* clear float so following blocks don't wrap */}
+              <div className="clear-both" />
+            </div>
         </div>
 
         {/* Booking Form */}
-        <div className="bg-white rounded-xl shadow-lg p-6">
+        <aside>
+          <div className="sticky top-6">
+       <div className="bg-white rounded-xl shadow-lg p-6">
           <h2 className="text-2xl font-semibold mb-4">
             Book {tempo.name}
           </h2>
@@ -203,6 +221,8 @@ export default function TempoDetailPage() {
             </button>
           </form>
         </div>
+        </div>
+        </aside>
       </div>
 
          {/* Related block */}

@@ -133,7 +133,7 @@ export default function Navbar() {
 
             {/* right CTA + mobile button */}
             <div className="flex items-center gap-3">
-              <Link href="/contact" className="hidden md:inline-flex items-center rounded-full bg-[#f58220] px-5 py-2 text-white font-medium hover:opacity-95 hover:bg-light hover:text-orange">
+              <Link href="/contact" className="hidden md:inline-flex items-center rounded-full bg-orange px-5 py-2 text-white font-medium hover:opacity-95 hover:bg-light hover:text-orange">
                 Contact Us
               </Link>
 
