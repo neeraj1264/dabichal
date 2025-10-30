@@ -43,7 +43,7 @@ End: ${form.endDate}
 Pickup: ${form.pickup}
 Message: ${form.message}
 `;
-    const url = "https://wa.me/919518131347?text=" + encodeURIComponent(msg);
+    const url = "https://wa.me/919518131847?text=" + encodeURIComponent(msg);
     window.open(url, "_blank");
   }
 

@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         <div className="fixed bottom-6 left-6 flex flex-col gap-4 z-50">
           {/* WhatsApp with sonar effect */}
           <a
-            href="https://wa.me/919518131347"
+            href="https://wa.me/919518131847"
             target="_blank"
             rel="noopener noreferrer"
             className="w-12 h-12 flex items-center justify-center rounded-full text-green-500 bg-white shadow-lg hover:scale-110 transition-transform duration-300 animate-float"
@@ -45,7 +45,7 @@ export default function RootLayout({ children }) {
           </a>
 
           {/* Phone with sonar effect */}
-          <a href="tel:+919518131347" className="btn-sonar phone bg-orange">
+          <a href="tel:+919518131847" className="btn-sonar phone bg-orange">
             <FaPhone size={22} />
           </a>
         </div>

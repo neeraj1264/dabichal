@@ -21,22 +21,22 @@ export function TopBar() {
       {/* RIGHT: Black block */}
       <div className="flex-1 bg-black text-white text-sm flex items-center justify-center px-1 md:px-4 sm:px-6">
         <div className="flex items-center gap-6">
-          <a href="mailto:neerajm1264@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80 hidden sm:inline">
+          <a href="mailto:mmankarnsingh12@gmail.com" className="inline-flex items-center gap-2 hover:opacity-80 hidden sm:inline">
             <Mail size={14} aria-hidden className=" sm:inline"/>
-            <span className="hidden sm:inline mx-2">neerajm1264@gmail.com</span>
+            <span className="hidden sm:inline mx-2">mmankarnsingh12@gmail.com</span>
           </a>
-          <a href="tel:+919518131347" className="inline-flex items-center gap-2 hover:opacity-80">
+          <a href="tel:+919518131847" className="inline-flex items-center gap-2 hover:opacity-80">
             <Phone size={14} aria-hidden />
-            <span className=" sm:inline">+91 9518131347</span>
+            <span className=" sm:inline">+91 9518131847</span>
           </a>
           <a href="tel:+919034653455" className="inline-flex items-center gap-2 hover:opacity-80">
             <Phone size={14} aria-hidden className="hidden sm:inline"/>
             <span className="sm:inline">+91 9034653455</span>
           </a>
-          <a href="https://www.facebook.com/neeraj.manchanda.3910" className="text-xl">
+          <a href="https://www.facebook.com/share/1D3iRqVtDg/" className="text-xl">
              <FaFacebookF  className="hover:text-blue-600" />
           </a>
-          <a href="https://www.instagram.com/neeraj_1264/?igsh=NDJweXlyc2syYnZr#" className="text-xl">
+          <a href="https://www.instagram.com/mankarn_chattha?igsh=MXVhbjVjejBsbjFvdQ==" className="text-xl">
           <FaInstagram className="hover:text-pink-500" />
           </a>
         </div>

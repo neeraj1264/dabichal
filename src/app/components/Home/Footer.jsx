@@ -59,11 +59,11 @@ export default function Footer() {
             80/2, Village Burail, Sector 45, Chandigarh 160047
           </p>
           <h3 className="text-white font-semibold mb-2">Contact</h3>
-           <a href="mailto:neerajm1264@gmail.com">
-          <p className="text-base text-paragraph">neerajm1264@gmail.com</p>
+           <a href="mailto:mmankarnsingh12@gmail.com">
+          <p className="text-base text-paragraph">mmankarnsingh12@gmail.com</p>
           </a>
           <a href="tel:+919034653455">
-          <p className="text-base">+91 9034653455, +91 9518131347</p>
+          <p className="text-base">+91 9034653455, +91 9518131847</p>
           </a>
         </Reveal>
       </div>

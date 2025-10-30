@@ -80,7 +80,7 @@ export default function TempoDetailPage() {
     `;
 
     const whatsappUrl =
-      "https://wa.me/919518131347?text=" + encodeURIComponent(msg);
+      "https://wa.me/919518131847?text=" + encodeURIComponent(msg);
 
     window.open(whatsappUrl, "_blank");
   };

@@ -40,7 +40,7 @@ End: ${form.endDate}
 Pickup: ${form.pickup}
 Message: ${form.message}
     `;
-    const phoneNumber = "919518131347"; // replace with your number (country code + number)
+    const phoneNumber = "919518131847"; // replace with your number (country code + number)
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`;
     window.open(url, "_blank");
   }

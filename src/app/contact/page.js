@@ -40,7 +40,7 @@ export default function ContactPage() {
     `;
 
     const whatsappUrl =
-      "https://wa.me/919518131347?text=" + encodeURIComponent(msg);
+      "https://wa.me/919518131847?text=" + encodeURIComponent(msg);
 
     window.open(whatsappUrl, "_blank");
   };
@@ -75,9 +75,9 @@ export default function ContactPage() {
                   {" "}
                   <span className="text-black text-xl font-bold">Location</span>
                   <br />
-                  80/2, Village Burail, Sector 45,
+                  Shop No 5, New Defence Colony,
                   <br />
-                  Chandigarh 160047
+                  Near Sbi Bank, Zirakpur
                 </p>
               </div>
               <div className="flex items-start gap-3 mt-6">
@@ -87,8 +87,10 @@ export default function ContactPage() {
                     {" "}
                     <span className="text-black text-xl font-bold">Phone</span>
                     <br />
-                    +91 8054481466 <br />
-                    +91 8427821466
+                    +91 9518131847 <br />
+                    +91 9034653455 <br />
+                    +91 7494851984 <br/>
+                    +91 8284816856
                   </p>
                 </div>
               </div>
@@ -100,10 +102,10 @@ export default function ContactPage() {
                 <span className="text-black text-xl font-bold">Mail</span>
                 <br />
                 <a
-                  href="mailto:neerajm1264@gmail.com"
+                  href="mailto:mmankarnsingh12@gmail.com"
                   className="hover:underline"
                 >
-                  neerajm1264@gmail.com
+                  mmankarnsingh12@gmail.com
                 </a>
               </p>
             </div>
@@ -114,13 +116,13 @@ export default function ContactPage() {
                   <span className="text-black text-xl font-bold">Social</span>
                   <br />
                   <a
-                    href="https://www.facebook.com/neeraj.manchanda.3910"
+                    href="https://www.facebook.com/share/1D3iRqVtDg/"
                     className="text-gray-600 hover:text-[#f58220] inline-block mr-3"
                   >
                     <FaFacebook size={20} />
                   </a>
                   <a
-                    href="https://www.instagram.com/neeraj_1264/?igsh=NDJweXlyc2syYnZr#"
+                    href="https://www.instagram.com/mankarn_chattha?igsh=MXVhbjVjejBsbjFvdQ=="
                     className="text-gray-600 hover:text-[#f58220] inline-block"
                   >
                     <FaInstagram size={20} />
