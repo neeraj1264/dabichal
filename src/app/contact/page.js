@@ -36,7 +36,7 @@ export default function ContactPage() {
 📌 Subject: ${formData.subject}
 📝 Message: ${formData.message}
 
-🔗 Website: www.sardarjitourandtravels.in
+🔗 Website: https://sardarjitourandtravels.in/
     `;
 
     const whatsappUrl =

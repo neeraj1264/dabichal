@@ -99,7 +99,7 @@ export default function CarDetailPage() {
 📍 Pickup: ${formData.pickup}
 📝 Message: ${formData.message}
 
-🔗 Website: www.sardarjitourandtravels.in
+🔗 Website: https://sardarjitourandtravels.in/
     `;
 
     const whatsappUrl =
