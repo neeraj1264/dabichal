@@ -9,7 +9,7 @@ export default function HeroTop() {
         alt="car background"
         fill
         priority
-        className="object-cover object-top"  // <- ensures image starts from top
+        className="object-cover object-top" // <- ensures image starts from top
       />
 
       {/* Overlay gradient */}
@@ -23,23 +23,22 @@ export default function HeroTop() {
               Sardar Ji Tour &amp; Travels
             </h1>
             <p className="mt-4 text-white/90 text-base md:text-lg max-w-2xl mx-auto">
-              Reliable taxi and chauffeur services for city rides, airport transfers, and outstation trips. Comfortable cars, honest fares — travel with peace of mind.
+              Safe, comfortable, and reliable travel — wherever you go. We
+              promise peace of mind with every mile.
             </p>
 
-<div className="mt-8 flex flex-wrap justify-center gap-4 mx-auto">
-  <a
-    href={`https://wa.me/919518131847?text=${encodeURIComponent(
-      "Hello Sardar Ji Travels 👋,\n\nI’d like to book a cab. Please share available car options, fares, and trip details.\n\nThank you!"
-    )}`}
-    target="_blank"
-    rel="noopener noreferrer"
-    className="bg-orange hover:bg-white hover:text-orange text-white px-6 py-3 rounded-full shadow-md transition font-bold"
-  >
-    Book Now
-  </a>
-</div>
-
-
+            <div className="mt-8 flex flex-wrap justify-center gap-4 mx-auto">
+              <a
+                href={`https://wa.me/919518131847?text=${encodeURIComponent(
+                  "Hello Sardar Ji Travels 👋,\n\nI’d like to book a cab. Please share available car options, fares, and trip details.\n\nThank you!"
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-orange hover:bg-white hover:text-orange text-white px-6 py-3 rounded-full shadow-md transition font-bold"
+              >
+                Book Now
+              </a>
+            </div>
           </div>
         </div>
       </div>
