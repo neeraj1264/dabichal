@@ -6,6 +6,7 @@ import { Mail, Phone, Menu, X, ChevronDown, Grid } from "lucide-react";
 import { Dropdown } from "./Dropdown";
 import { TopBar } from "./TopBar";
 import { BsGridFill } from "react-icons/bs";
+import { usePathname } from "next/navigation";
 
 const NAV = [
   {
@@ -86,6 +87,7 @@ const NAV = [
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
+  const pathname = usePathname(); // ✅ get current route
 
   useEffect(() => {
     const handleScroll = () => {
@@ -100,16 +102,22 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+    // ✅ check if it's homepage
+  const isHome = pathname === "/";
+
   return (
-    <header className="w-full">
+    <header className={`absolute top-0 left-0 w-full z-50 ${
+        isHome ? "bg-transparent" : "bg-white shadow-md"
+      }`}>
+
        <TopBar />
       {/* top bars */}
 
       {/* main nav */}
-      <nav className={`w-full z-50 transition-all duration-300 rounded-t-none rounded-b-[1rem] border-none ${
+      <nav className={`w-full z-50 transition-all duration-300 rounded-t-none rounded-b-[1rem] ${
         isFixed
-          ? "fixed top-0 left-0 bg-white shadow-2xl"
-          : "bg-white border-b shadow-sm"
+          ? "fixed top-0 left-0  shadow-2xl bg-white"
+          : " shadow-sm "
       }`}>
         <div className="mx-auto max-w-7xl px-4 sm:pr-14 sm:pl-8">
           <div className="flex h-16 sm:h-20 items-center justify-between">
@@ -122,9 +130,9 @@ export default function Navbar() {
             <div className="hidden lg:flex lg:items-center font-bold text-base">
               {NAV.map((entry) =>
                 entry.items ? (
-                  <Dropdown key={entry.label} title={entry.label} items={entry.items} />
+                  <Dropdown key={entry.label} title={entry.label} items={entry.items} isFixed={isFixed} isHome={isHome}/>
                 ) : (
-                  <Link key={entry.label} href={entry.href} className="py-3 px-2 text-base font-bold text-black hover:text-orange">
+                  <Link key={entry.label} href={entry.href} className={`py-3 px-2 text-base font-bold  hover:text-orange  ${ isHome && !isFixed ? "text-white" : "text-black" }`}>
                     {entry.label}
                   </Link>
                 )
@@ -159,7 +167,7 @@ export default function Navbar() {
     <div className="relative w-28 h-14">
       <Image src="/logo.png" alt="Sardar Ji Travels" sizes="48px" fill className="object-contain" />
     </div>
-    <button onClick={() => setMobileOpen(false)} className="text-white bg-[#f58220] rounded-full p-2">
+    <button onClick={() => setMobileOpen(false)} className="text-white bg-orange rounded-full p-2">
       <X size={20} />
     </button>
   </div>
@@ -216,7 +224,7 @@ export default function Navbar() {
 
     <Link
       href="/contact"
-      className="block mt-4 rounded-md bg-[#f58220] px-4 py-2 text-white text-center font-medium"
+      className="block mt-4 rounded-md bg-orange px-4 py-2 text-white text-center font-medium"
       onClick={() => setMobileOpen(false)}
     >
       Contact Us

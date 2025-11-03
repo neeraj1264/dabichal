@@ -73,7 +73,7 @@ Message: ${form.message}
                 <div className="text-sm font-medium mb-3">{c.title}</div>
                 <Link
                   href={`/routes/${c.slug}`}
-                  className="inline-block bg-[#f58220] text-white px-4 py-2 rounded-full hover:brightness-95 transition"
+                  className="inline-block bg-orange text-white px-4 py-2 rounded-full hover:brightness-95 transition"
                 >
                   Book Now
                 </Link>
@@ -255,7 +255,7 @@ Message: ${form.message}
                   />
               
                   <button
-                    className="w-full bg-[#f58220] text-white py-2 rounded hover:brightness-95 transition"
+                    className="w-full bg-orange text-white py-2 rounded hover:brightness-95 transition"
                     type="submit"
                   >
                     Submit
@@ -270,7 +270,7 @@ Message: ${form.message}
         <div className="container mx-auto px-6 mt-10">
           <div className="bg-white border border-gray rounded-lg p-6 pb-10">
             <div className="flex items-center gap-3 mb-4">
-              <span className="w-6 h-0.5 bg-[#f58220] inline-block" />
+              <span className="w-6 h-0.5 bg-orange inline-block" />
               <h3 className="text-lg font-semibold">Related</h3>
             </div>
 
@@ -292,7 +292,7 @@ Message: ${form.message}
                     <div className="text-sm font-medium">{r.title}</div>
                     <Link
                       href={`/routes/${r.slug}`}
-                      className="text-xs mt-1 inline-block text-[#f58220] hover:underline"
+                      className="text-xs mt-1 inline-block text-orange hover:underline"
                     >
                       Book Now
                     </Link>

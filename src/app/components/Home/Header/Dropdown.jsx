@@ -3,7 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { ChevronDown } from "lucide-react";
 
-export function Dropdown({ title, items }) {
+export function Dropdown({ title, items , isFixed = false, isHome = false}) {
   const [open, setOpen] = useState(false);
   const [closing, setClosing] = useState(false);
 
@@ -22,6 +22,9 @@ export function Dropdown({ title, items }) {
     setClosing(timer);
   };
 
+   const textColor =
+    isHome && !isFixed ? "text-white hover:text-orange" : "text-black hover:text-orange";
+
   return (
     <div
       className="relative"
@@ -29,7 +32,7 @@ export function Dropdown({ title, items }) {
       onMouseLeave={handleMouseLeave}
     >
       {/* parent link */}
-      <button className="flex items-center gap-1 px-3 py-2 text-black hover:text-orange font-bold">
+      <button className={`flex items-center gap-1 px-3 py-2  ${textColor} hover:text-orange font-bold`}>
         {title}
         <ChevronDown size={16} className={`transition ${open ? "rotate-180" : ""}`} />
       </button>

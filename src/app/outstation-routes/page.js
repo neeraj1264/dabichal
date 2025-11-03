@@ -36,7 +36,7 @@ export default function OutstationList() {
                 className="w-full object-cover"
               />
               {/* Tag Badge */}
-              <span className="absolute top-2 right-2 bg-[#f58220] text-white text-xs font-semibold px-3 py-1 rounded">
+              <span className="absolute top-2 right-2 bg-orange text-white text-xs font-semibold px-3 py-1 rounded">
                 Outstation Routes
               </span>
             </div>
@@ -48,7 +48,7 @@ export default function OutstationList() {
               </h3>
 
               <Link href={`/outstation-routes/${route.slug}`}>
-                <button className="group inline-flex items-center gap-2 bg-[#f58220] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black transition-all duration-300">
+                <button className="group inline-flex items-center gap-2 bg-orange text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black transition-all duration-300">
                   Book Now
                   <FaChevronRight className="group-hover:translate-x-1 transition-transform duration-300" />
                 </button>

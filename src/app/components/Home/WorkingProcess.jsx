@@ -33,12 +33,12 @@ export default function WorkingProcess() {
             <Reveal key={step.id} className="relative w-48 h-48 flex items-center justify-center">
               {/* Rotating Border */}
               <Reveal
-                className="absolute inset-0 rounded-full border-2 border-dotted border-[#f58220] animate-spin-slow"
+                className="absolute inset-0 rounded-full border-2 border-dotted border-orange animate-spin-slow"
                 style={{ animationDelay: `${index * 0.5}s` }}
               ></Reveal>
 
               {/* Step Number */}
-              <Reveal className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-[#f58220] text-white w-10 h-10 flex items-center justify-center rounded-full font-bold">
+              <Reveal className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-orange text-white w-10 h-10 flex items-center justify-center rounded-full font-bold">
                 {step.id}
               </Reveal>
 
@@ -50,7 +50,7 @@ export default function WorkingProcess() {
 
         {/* Button */}
         <div className="mt-12">
-          <Link className="group inline-flex items-center gap-2 bg-[#f58220] px-8 py-3 rounded-xl text-white font-semibold transition-all duration-300 hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
+          <Link className="group inline-flex items-center gap-2 bg-orange px-8 py-3 rounded-xl text-white font-semibold transition-all duration-300 hover:bg-white hover:text-orange border-2 border-orange"
           href={"/taxi-ride"}
           >
             Book Taxi

@@ -126,7 +126,7 @@ export default function OutstationDetailPage() {
                   <input name="pickup" value={formData.pickup} onChange={handleChange} placeholder="Pick-Up Location" className="w-full bg-border text-paragraph rounded p-2 text-sm" />
                   <textarea name="message" value={formData.message} onChange={handleChange} placeholder="Write Message" className="w-full bg-border text-paragraph rounded p-2 text-sm h-24 resize-none" />
 
-                  <button className="w-full bg-[#f58220] text-white py-2 rounded hover:brightness-95 transition" type="submit">
+                  <button className="w-full bg-orange text-white py-2 rounded hover:brightness-95 transition" type="submit">
                     Submit on WhatsApp
                   </button>
                 </form>
@@ -139,7 +139,7 @@ export default function OutstationDetailPage() {
         <div className="container mx-auto px-6 mt-8">
           <div className="bg-white border-2 border-border rounded-lg p-4">
             <div className="flex items-center gap-3 mb-4">
-              <span className="w-6 h-0.5 bg-[#f58220] inline-block" />
+              <span className="w-6 h-0.5 bg-orange inline-block" />
               <h3 className="text-2xl font-semibold">Related</h3>
             </div>
 
@@ -154,7 +154,7 @@ export default function OutstationDetailPage() {
 
                   <div className="flex-1">
                     <h4 className="text-lg font-bold">{r.title}</h4>
-                    <Link href={`/outstation-routes/${r.slug}`} className="text-base font-bold mt-2 inline-block text-[#f58220] hover:underline">
+                    <Link href={`/outstation-routes/${r.slug}`} className="text-base font-bold mt-2 inline-block text-orange hover:underline">
                       Book Now
                     </Link>
                   </div>

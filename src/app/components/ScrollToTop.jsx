@@ -50,7 +50,7 @@ export default function ScrollToTop() {
             cx="28"
             cy="28"
             r={radius}
-            stroke="#f97316" // orange
+            stroke="#00c1ff" // orange
             strokeWidth="4"
             fill="none"
             strokeDasharray={circumference}

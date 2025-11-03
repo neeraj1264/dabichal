@@ -50,7 +50,7 @@ export default function Himachal() {
                 <div className="flex justify-center">
                   <Link
                     href={`/himachal-pilgrim/${t.slug}`}
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#f58220] text-white text-sm font-medium shadow-sm hover:brightness-95 transition"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-orange text-white text-sm font-medium shadow-sm hover:brightness-95 transition"
                     aria-label={`Book ${t.title}`}
                   >
                     <span>Book Now</span>

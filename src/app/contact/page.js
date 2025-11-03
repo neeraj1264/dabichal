@@ -70,7 +70,7 @@ export default function ContactPage() {
           <div className="space-y-6 text-gray-700">
             <div className="grid md:grid-cols-2 mt-6 gap-4">
               <div className="flex items-start gap-3 mt-6">
-                <FaMapMarkerAlt className="text-[#f58220] mt-1" />
+                <FaMapMarkerAlt className="text-orange mt-1" />
                 <p className="text-paragraph leading-relaxed">
                   {" "}
                   <span className="text-black text-xl font-bold">Location</span>
@@ -81,7 +81,7 @@ export default function ContactPage() {
                 </p>
               </div>
               <div className="flex items-start gap-3 mt-6">
-                <FaPhoneAlt className="text-[#f58220] mt-1" />
+                <FaPhoneAlt className="text-orange mt-1" />
                 <div>
                   <p className="text-paragraph leading-relaxed">
                     {" "}
@@ -96,7 +96,7 @@ export default function ContactPage() {
               </div>
 
             <div className="flex items-start gap-3 mt-6">
-              <FaEnvelope className="text-[#f58220]" />
+              <FaEnvelope className="text-orange" />
               <p className="text-paragraph leading-relaxed mt-[-3px]">
                 {" "}
                 <span className="text-black text-xl font-bold">Mail</span>
@@ -110,20 +110,20 @@ export default function ContactPage() {
               </p>
             </div>
             <div className="flex items-start gap-3 mt-6">
-              <FaShareAlt className="text-[#f58220]" />
+              <FaShareAlt className="text-orange" />
               <div className="flex gap-4">
                 <div className="text-paragraph leading-relaxed mt-[-3px]">
                   <span className="text-black text-xl font-bold">Social</span>
                   <br />
                   <a
                     href="https://www.facebook.com/share/1D3iRqVtDg/"
-                    className="text-gray-600 hover:text-[#f58220] inline-block mr-3"
+                    className="text-gray-600 hover:text-orange inline-block mr-3"
                   >
                     <FaFacebook size={20} />
                   </a>
                   <a
                     href="https://www.instagram.com/mankarn_chattha?igsh=MXVhbjVjejBsbjFvdQ=="
-                    className="text-gray-600 hover:text-[#f58220] inline-block"
+                    className="text-gray-600 hover:text-orange inline-block"
                   >
                     <FaInstagram size={20} />
                   </a>
@@ -143,7 +143,7 @@ export default function ContactPage() {
                 type="text"
                 name="name"
                 placeholder="Your Name"
-                className="w-full border-b bg-light border-paragraph focus:border-[#f58220] outline-none py-2"
+                className="w-full border-b bg-light border-paragraph focus:border-orange outline-none py-2"
                 value={formData.name}
                 onChange={handleChange}
                 required
@@ -152,7 +152,7 @@ export default function ContactPage() {
                 type="email"
                 name="email"
                 placeholder="Email Address"
-                className="w-full border-b bg-light border-paragraph focus:border-[#f58220] outline-none py-2"
+                className="w-full border-b bg-light border-paragraph focus:border-orange outline-none py-2"
                 value={formData.email}
                 onChange={handleChange}
                 required
@@ -163,7 +163,7 @@ export default function ContactPage() {
                 type="tel"
                 name="phone"
                 placeholder="Phone Number"
-                className="w-full border-b bg-light border-paragraph focus:border-[#f58220] outline-none py-2"
+                className="w-full border-b bg-light border-paragraph focus:border-orange outline-none py-2"
                 value={formData.phone}
                 onChange={handleChange}
                 required
@@ -172,7 +172,7 @@ export default function ContactPage() {
                 type="text"
                 name="subject"
                 placeholder="Subject"
-                className="w-full border-b bg-light border-paragraph focus:border-[#f58220] outline-none py-2"
+                className="w-full border-b bg-light border-paragraph focus:border-orange outline-none py-2"
                 value={formData.subject}
                 onChange={handleChange}
               />

@@ -30,7 +30,8 @@ module.exports = {
         paragraph: "#8A8C94",
         black: "black",
         white: "white",
-        orange: "#ff8711",
+        orange: "#00c1ff",
+        oldorange: "#ff8711",
         gray: "#d8d8ff",
         border: "#ededed"
       },

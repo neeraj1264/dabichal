@@ -44,7 +44,7 @@ export default function TempoTravellerPage() {
               {/* Info */}
               <Reveal className="pt-2 sm:p-4 text-center">
                 <h3 className="text-lg font-semibold mb-4">{car.name}</h3>
-                <Link className="text-xs sm:text-lg group inline-flex items-center gap-2 bg-[#f58220] text-white px-5 py-2 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
+                <Link className="text-xs sm:text-lg group inline-flex items-center gap-2 bg-orange text-white px-5 py-2 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-orange border-2 border-orange"
                 href={car.to}
                 >
                   Book Now

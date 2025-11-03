@@ -54,12 +54,12 @@ export default function Hero() {
   }, [current]);
 
   return (
-    <div className="relative w-full h-[35vh] sm:h-[90vh] overflow-hidden">
+    <div className="relative w-[96%] h-[35vh] sm:h-[90vh] overflow-hidden mt-16 mx-auto rounded-xl shadow-3xl">
       {/* Slides */}
       {slides.map((slide, index) => (
         <div
           key={slide.id}
-          className={`absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 ${
+          className={`absolute top-0 left-0 w-full h-full bg-cover bg-center transition-opacity duration-1000 shadow-3xl ${
             index === current ? "opacity-100 z-10" : "opacity-0"
           }`}
           style={{ backgroundImage: `url(${slide.image})` }}

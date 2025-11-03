@@ -38,7 +38,7 @@ export const OneWayRoutes = () => {
             />
 
                       {/* Orange Floating Box */}
-            <Reveal className="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-[#f58220] w-[85%] rounded-b-xl pb-4 pt-2 px-2 flex flex-col items-center text-white shadow-lg">
+            <Reveal className="absolute bottom-14 left-1/2 transform -translate-x-1/2 bg-orange w-[85%] rounded-b-xl pb-4 pt-2 px-2 flex flex-col items-center text-white shadow-lg">
               <h3 className="text-base font-semibold mb-1 text-center">
                 {route.title}
               </h3>
@@ -54,7 +54,7 @@ export const OneWayRoutes = () => {
 
       {/* Bottom Explore More */}
       <div className="flex justify-center mt-12">
-        <button className="bg-[#f58220] text-white px-6 py-2 rounded hover:bg-black hover:text-white transition duration-300 flex items-center gap-2">
+        <button className="bg-orange text-white px-6 py-2 rounded-2xl hover:bg-black hover:text-white transition duration-300 flex items-center gap-2">
           Explore More
           <FaChevronRight />
         </button>

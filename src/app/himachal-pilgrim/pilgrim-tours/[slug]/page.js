@@ -203,7 +203,7 @@ Message: ${form.message}
                 <input name="pickup" value={form.pickup} onChange={handleChange} placeholder="Pick-Up Location" className="w-full bg-border text-paragraph rounded p-2 text-sm" />
                 <textarea name="message" value={form.message} onChange={handleChange} placeholder="Write Message" className="w-full bg-border text-paragraph rounded p-2 text-sm h-24 resize-none" />
 
-                <button type="submit" className="w-full bg-[#f58220] text-white py-2 rounded hover:brightness-95 transition">Submit</button>
+                <button type="submit" className="w-full bg-orange text-white py-2 rounded hover:brightness-95 transition">Submit</button>
               </form>
             </div>
             </div>
@@ -214,7 +214,7 @@ Message: ${form.message}
         <div className="container mx-auto px-6 mt-8">
           <div className="bg-white border border-gray rounded-lg p-4">
             <div className="flex items-center gap-3 mb-4">
-              <span className="w-6 h-0.5 bg-[#f58220] inline-block" />
+              <span className="w-6 h-0.5 bg-orange inline-block" />
               <h3 className="text-lg font-semibold">Related</h3>
             </div>
 
@@ -226,7 +226,7 @@ Message: ${form.message}
                   </div>
                   <div>
                     <div className="text-sm font-medium">{r.title}</div>
-                    <div className="text-sm text-[#f58220] mt-1">Book Now</div>
+                    <div className="text-sm text-orange mt-1">Book Now</div>
                   </div>
                 </Link>
               ))}

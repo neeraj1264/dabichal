@@ -9,12 +9,12 @@ import { usePathname } from "next/navigation";
 export default function WelcomeSection() {
   const pathname = usePathname();
   return (
-    <section className="pt-16 sm:px-12 px-4 bg-white">
+    <section className="pt-16 sm:px-12 px-4 bg-light">
       <div className="container mx-auto sm:px-4 sm:grid md:grid-cols-2 gap-10">
         {/* Left Images */}
         <Reveal className="relative">
           {/* Experience Badge */}
-          <div className=" absolute -top-0 left-0 sm:left-[61px] bg-[#f58220] text-white px-6 py-6 w-[270px] z-20">
+          <div className=" absolute -top-0 left-0 sm:left-[61px] bg-orange text-white px-6 py-6 w-[270px] z-20">
             <h3 className="text-3xl font-bold">25+</h3>
             <p className="text-sm">Years Of Experience</p>
             <div className="flex gap-1 mt-2">
@@ -24,8 +24,8 @@ export default function WelcomeSection() {
             </div>
 
             {/* Rating Box */}
-            <div className="hidden sm:block absolute top-0 right-0 bg-white text-[#f58220] border-2 border-[#f58220] px-3 py-1 font-semibold flex items-center">
-              4.9 <FaStar className="ml-1 text-[#f58220]" />
+            <div className="hidden sm:block absolute top-0 right-0 bg-white text-orange border-2 border-orange px-3 py-1 font-semibold flex items-center">
+              4.9 <FaStar className="ml-1 text-orange" />
             </div>
           </div>
 
@@ -108,7 +108,7 @@ export default function WelcomeSection() {
           {/* ✅ Show button only on home page */}
           {pathname === "/" && (
             <Link
-              className="group inline-flex items-center gap-2 bg-[#f58220] text-white px-6 py-3 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-white hover:text-[#f58220] border-2 border-[#f58220]"
+              className="group inline-flex items-center gap-2 bg-orange text-white px-6 py-3 rounded-full font-medium transition-all duration-300 ease-in-out hover:bg-white hover:text-orange border-2 border-orange"
               href={"/about-us"}
             >
               Learn More Us

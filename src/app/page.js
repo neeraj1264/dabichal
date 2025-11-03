@@ -8,12 +8,15 @@ import TourServices from "./components/Home/TourServices";
 import CustomerFeedbacks from "./components/Home/CustomerFeedbacks";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import HeroTop from "./components/Home/HeroSection/Hero1";
 
 export default function HomePage() {
   return (
     <>
-    <Hero/>
+    <HeroTop/>
+    
     <WelcomeSection/>
+    <Hero/>
     <WorkingProcess/>
     <TaxiCabRide/>
     <TravelServices/>

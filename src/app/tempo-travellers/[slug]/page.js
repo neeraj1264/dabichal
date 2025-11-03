@@ -215,7 +215,7 @@ export default function TempoDetailPage() {
             />
             <button
               type="submit"
-              className="bg-[#f58220] text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition"
+              className="bg-orange text-white px-6 py-2 rounded-lg hover:bg-orange-600 transition"
             >
               Submit on WhatsApp
             </button>
@@ -229,7 +229,7 @@ export default function TempoDetailPage() {
               <div className="container mx-auto px-6 mt-8">
                 <div className="bg-white border-2 border-border rounded-lg p-4">
                   <div className="flex items-center gap-3 mb-4">
-                    <span className="w-6 h-0.5 bg-[#f58220] inline-block" />
+                    <span className="w-6 h-0.5 bg-orange inline-block" />
                     <h3 className="text-2xl font-semibold">Related</h3>
                   </div>
       
@@ -252,7 +252,7 @@ export default function TempoDetailPage() {
                           <h4 className="text-lg font-bold font-medium">{r.name}</h4>
                           <Link
                             href={`/tempo-travellers/${r.slug}`}
-                            className="text-base font-bold mt-2 inline-block text-[#f58220] hover:underline"
+                            className="text-base font-bold mt-2 inline-block text-orange hover:underline"
                           >
                             Book Now
                           </Link>

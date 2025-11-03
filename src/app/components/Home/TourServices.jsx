@@ -66,7 +66,7 @@ export default function TourServices() {
                 className="w-full object-cover"
               />
               {/* Tag Badge */}
-              <span className="absolute top-2 right-2 bg-[#f58220] text-white text-xs font-semibold px-3 py-1 rounded">
+              <span className="absolute top-2 right-2 bg-orange text-white text-xs font-semibold px-3 py-1 rounded">
                 {tour.tag}
               </span>
             </Reveal>
@@ -76,7 +76,7 @@ export default function TourServices() {
               <h3 className="text-md font-medium text-gray-800 mb-3">
                 {tour.title}
               </h3>
-              <button className="group inline-flex items-center gap-2 bg-[#f58220] text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black transition-all duration-300">
+              <button className="group inline-flex items-center gap-2 bg-orange text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black transition-all duration-300">
                 Explore More
                 <FaChevronRight className="group-hover:translate-x-1 transition-transform duration-300" />
               </button>
