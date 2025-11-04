@@ -477,7 +477,7 @@ export const outstationRoutes = [
     image: "/routes/routes6.jpg",
   },
   {
-    slug:"chandigarh-to-jehradun",
+    slug:"chandigarh-to-jalandhar",
     title:"Chandigarh to Jalandhar",
     description:"For those seeking a comfortable and affordable one-way taxi from Chandigarh to Jalandhar, Sardar Ji Travels is your go-to provider. Our Chandigarh to Jalandhar one-way taxi service ensures a hassle-free and smooth journey, offering you the flexibility to travel without the need for a return trip. Whether you're traveling for business or pleasure, our reliable taxi service provides a seamless experience, ensuring you reach your destination on time and in comfort. You can now easily book a one-way taxi with us, ensuring you get the best value for your money. Sardar Ji Travels offers a wide range of well-maintained vehicles for Chandigarh to Jalandhar one-way taxi bookings, so you can enjoy your ride in comfort. Our experienced drivers are familiar with the best routes and will ensure that you have a smooth ride. With our one-way taxi booking service, you can enjoy a stress-free journey, while benefiting from our competitive prices and professional service. Whether you’re looking for a taxi service or a one-way rental, Sardar Ji Travels guarantees excellent customer service, punctuality, and a comfortable travel experience from Chandigarh to Jalandhar.",
     image: "/routes/routes7.jpg",

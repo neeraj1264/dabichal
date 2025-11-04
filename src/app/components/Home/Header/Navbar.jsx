@@ -106,9 +106,10 @@ export default function Navbar() {
   const isHome = pathname === "/";
 
   return (
-    <header className={`absolute top-0 left-0 w-full z-50 ${
-        isHome ? "bg-transparent" : "bg-white shadow-md"
-      }`}>
+    <header className={`top-0 left-0 w-full z-50 ${
+   isHome ? "absolute bg-transparent" : "relative bg-white shadow-md"
+ }`}
+      >
 
        <TopBar />
       {/* top bars */}

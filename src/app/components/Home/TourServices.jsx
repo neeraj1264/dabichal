@@ -2,6 +2,7 @@ import React from "react";
 import { FaChevronRight } from "react-icons/fa";
 import Reveal from "../reveal";
 import Image from "next/image";
+import Link from "next/link";
 
 const tours = [
   {
@@ -9,7 +10,8 @@ const tours = [
     title: "Srinagar Tour 6 Days",
     image:
       "/services/s1.jpg",
-    tag: "6 NIGHTS / 6 DAYS",
+    tag: "5 NIGHTS / 6 DAYS",
+    to: "/ladakh-kashmir/kashmir/srinagar-tour-6-days"
   },
   {
     id: 2,
@@ -17,6 +19,7 @@ const tours = [
     image:
       "/services/s2.jpg",
     tag: "8 NIGHTS / 9 DAYS",
+    to: "/ladakh-kashmir/kashmir/jammu-srinagar-gulmarg-pahalgam-9-days"
   },
   {
     id: 3,
@@ -24,20 +27,31 @@ const tours = [
     image:
       "/services/s3.jpg",
     tag: "7 NIGHTS / 8 DAYS",
+    to:"/ladakh-kashmir/kashmir/Chandigarh-Amritsar-jammu-Srinagar-8-days"
   },
   {
     id: 4,
     title: "9 Days Spiti Valley Tour",
     image:
       "/services/s4.jpg",
-    tag: "9 NIGHTS / 9 DAYS",
+    tag: "8 NIGHTS / 9 DAYS",
+    to: "/ladakh-kashmir/ladakh-spiti/9-Days-Spiti-Valley-Tour"
+  },
+   {
+    id: 5,
+    title: "Leh Ladakh Tour From Chandigarh",
+    image:
+      "/ladakh/l1.jpg",
+    tag: "12 NIGHTS / 13 DAYS",
+    to: "/ladakh-kashmir/ladakh-spiti/Leh-Ladakh-Tour-From-Chandigarh"
   },
   {
-    id: 5,
-    title: "9 Days Spiti Valley Tour",
+    id: 6,
+    title: "Chandigarh to Spiti Valley Tour",
     image:
-      "/services/s5.jpg",
-    tag: "7 NIGHTS / 9 DAYS",
+      "/ladakh/l4.jpg",
+    tag: "9 NIGHTS / 10 DAYS",
+    to: "/ladakh-kashmir/ladakh-spiti/Chandigarh-to-Spiti-Valley-Tour"
   },
 ];
 
@@ -76,10 +90,10 @@ export default function TourServices() {
               <h3 className="text-md font-medium text-gray-800 mb-3">
                 {tour.title}
               </h3>
-              <button className="group inline-flex items-center gap-2 bg-orange text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black transition-all duration-300">
+              <Link href={tour.to} className="group inline-flex items-center gap-2 bg-orange text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black transition-all duration-300">
                 Explore More
                 <FaChevronRight className="group-hover:translate-x-1 transition-transform duration-300" />
-              </button>
+              </Link>
             </Reveal>
           </Reveal>
         ))}

@@ -16,6 +16,7 @@ export default function TaxiCabRide() {
   ];
 
   return (
+    <>
     <section className="bg-[#eee] py-16">
       <div className="container mx-auto px-6">
         {/* Title */}
@@ -54,5 +55,6 @@ export default function TaxiCabRide() {
         </Reveal>
       </div>
     </section>
+        </>
   );
 }

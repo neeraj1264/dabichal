@@ -6,37 +6,44 @@ import Reveal from "../reveal";
 const testimonials = [
   {
     id: 1,
-    name: "Ravinder Sharma",
+    name: "Rohit Sharma",
     feedback:
-      "Sardar Ji Travels, led by Mankaran singh, offers exceptional service! The vehicle was spotless, and driver Rahul Shukla made the journey smooth with his friendly and professional demeanor. Highly recommended for anyone looking for reliable and comfortable transportation.",
+      "Sardar Ji Tour & Travels, managed by Mankaran Singh, truly delivers top-class taxi service. Our trip from Chandigarh to Shimla was smooth, and the driver was polite and well-trained. The vehicle was spotless and comfortable — definitely using them again for future trips!",
     rating: 5,
   },
   {
     id: 2,
-    name: "Jolly",
+    name: "Priya Mehta",
     feedback:
-      "Mankaran singh’s Sardar Ji Travels provided a fantastic experience! Our driver Rahul Shukla was not only courteous and punctual but also offered great local insights. The vehicle was clean and well-maintained, making our trip enjoyable. I will definitely choose Sardar Ji Travels again!",
+      "I had a great experience with Sardar Ji Tour & Travels! Mr. Mankaran Singh was extremely responsive and ensured everything went perfectly. The car arrived on time, the ride was safe, and the fare was fair. Highly recommended for airport transfers and city rides.",
     rating: 5,
   },
   {
     id: 3,
     name: "Chandan Verma",
     feedback:
-    "Sardar Ji Travels is a game-changer in taxi services. Mankaran singh ensures that every ride is comfortable and hassle-free. Our driver, Rahul Shukla, was excellent—punctual, friendly, and knowledgeable. Highly recommend Sardar Ji Travels for anyone looking for reliable travel solutions.",
+      "Sardar Ji Tour & Travels exceeded my expectations. Mankaran Singh personally checked in to confirm our journey details, and the driver was friendly and punctual. It’s rare to find such honesty and professionalism in travel services these days. Five stars all the way!",
     rating: 5,
   },
-    {
+  {
     id: 4,
     name: "Bittu Singh",
     feedback:
-      "A big thanks to Mankaran singh and Sardar Ji Travels for their impeccable service! The Innova Crysta was in pristine condition, and Rahul Shukla was an amazing driver—professional, accommodating, and friendly. Our trip was made even better with such great service. Will use again!",
+      "Had a wonderful family trip from Chandigarh to Manali with Sardar Ji Tour & Travels. The cab was neat, the driver cooperative, and Mankaran Singh handled the booking very efficiently. Truly trustworthy service — we’ll definitely book again for our next vacation.",
     rating: 5,
   },
-    {
+  {
     id: 5,
-    name: "Sunshine Sshines",
+    name: "Sunita Chauhan",
     feedback:
-    "If you want a reliable, comfortable, and friendly ride, Sardar Ji Travels is the service to choose! Mankaran singh has built a fantastic service, with Rahul Shukla providing excellent driving and helpful tips. The vehicle was clean, and we felt safe throughout the journey.",
+      "I frequently travel for work and always book with Sardar Ji Tour & Travels. Mankaran Singh and his team never disappoint — clean cars, professional drivers, and on-time pickups every time. I can always rely on their service for outstation and business trips.",
+    rating: 5,
+  },
+  {
+    id: 6,
+    name: "Harpreet Kaur",
+    feedback:
+      "We booked a cab for our Chandigarh to Amritsar trip through Sardar Ji Tour & Travels. The whole experience was fantastic! Mankaran Singh ensured a smooth booking process, and our driver was polite and well-mannered. Excellent service and value for money.",
     rating: 5,
   },
 ];

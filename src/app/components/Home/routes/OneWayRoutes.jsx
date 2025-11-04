@@ -1,6 +1,7 @@
 import { FaChevronRight } from "react-icons/fa";
 import Reveal from "../../reveal";
 import Image from "next/image";
+import Link from "next/link";
 
 export const OneWayRoutes = () => {
   const routes = [
@@ -8,8 +9,8 @@ export const OneWayRoutes = () => {
     { title: "Chandigarh To Manali",     img: "/routes/routes2.jpg"      ,to: "/outstation-routes/chandigarh-to-manali"},
     { title: "Chandigarh To Kasol",      img: "/routes/routes3.jpg"      ,to: "/outstation-routes/chandigarh-to-kasol"},
     { title: "Chandigarh To Rishikesh",  img: "/routes/routes4.jpg"  ,to: "/outstation-routes/chandigarh-to-rishikesh"},
-    { title: "Chandigarh To Dehradhun",  img: "/routes/routes5.jpg"  ,to: "/outstation-routes/chandigarh-to-dehradhun"},
-    { title: "Chandigarh To Ghajiabad",  img: "/routes/routes6.jpg"   ,to: "/outstation-routes/chandigarh-to-ghajiabad"},
+    { title: "Chandigarh To Dehradhun",  img: "/routes/routes5.jpg"  ,to: "/outstation-routes/chandigarh-to-dehradun"},
+    { title: "Chandigarh To Ghajiabad",  img: "/routes/routes6.jpg"   ,to: "/outstation-routes/chandigarh-to-ghaziabad"},
     { title: "Chandigarh To Jalandhar",  img: "/routes/routes7.jpg"   ,to: "/outstation-routes/chandigarh-to-jalandhar"},
     { title: "Chandigarh To Jammu",      img: "/routes/routes8.jpg"      ,to: "/outstation-routes/chandigarh-to-jammu"},
     { title: "Chandigarh To Katra",      img: "/routes/routes9.jpg"       ,to: "/outstation-routes/chandigarh-to-katra"},
@@ -42,10 +43,10 @@ export const OneWayRoutes = () => {
               <h3 className="text-base font-semibold mb-1 text-center">
                 {route.title}
               </h3>
-              <button className="group inline-flex items-center gap-2 bg-black text-white px-5 py-2 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-black">
+              <Link href={route.to} className="group inline-flex items-center gap-2 bg-black text-white px-5 py-2 rounded-full font-medium transition-all duration-300 hover:bg-white hover:text-black">
                 Explore More
                 <FaChevronRight className="transition-transform duration-300 group-hover:translate-x-1" />
-              </button>
+              </Link>
             </Reveal>
           </Reveal>
           </div>
@@ -54,10 +55,10 @@ export const OneWayRoutes = () => {
 
       {/* Bottom Explore More */}
       <div className="flex justify-center mt-12">
-        <button className="bg-orange text-white px-6 py-2 rounded-2xl hover:bg-black hover:text-white transition duration-300 flex items-center gap-2">
+        <Link href="/outstation-routes" className="bg-orange text-white px-6 py-2 rounded-2xl hover:bg-black hover:text-white transition duration-300 flex items-center gap-2">
           Explore More
           <FaChevronRight />
-        </button>
+        </Link>
       </div>
     </div>
   );

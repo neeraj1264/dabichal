@@ -14,49 +14,68 @@ export const metadata = {
 export default function OutstationList() {
   // render the whole array
   return (
-    <section className="py-12 bg-white">
-      <Reveal className="text-center mb-10">
-        <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
-          Outstation Routes
-        </h2>
-      </Reveal>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 md:px-12">
-        {outstationRoutes.map((route) => (
-          <Reveal
-            key={route.slug}
-            className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
-          >
-            {/* Image */}
-            <div className="relative h-48">
-              <Image
-                src={route.image}
-                alt={route.title}
-                fill
-                className="w-full object-cover"
-              />
-              {/* Tag Badge */}
-              <span className="absolute top-2 right-2 bg-orange text-white text-xs font-semibold px-3 py-1 rounded">
-                Outstation Routes
-              </span>
-            </div>
-
-            {/* Content */}
-            <div className="p-4 text-center">
-              <h3 className="text-md font-medium text-gray-800 mb-3">
-                {route.title}
-              </h3>
-
-              <Link href={`/outstation-routes/${route.slug}`}>
-                <button className="group inline-flex items-center gap-2 bg-orange text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black transition-all duration-300">
-                  Book Now
-                  <FaChevronRight className="group-hover:translate-x-1 transition-transform duration-300" />
-                </button>
-              </Link>
-            </div>
+    <>
+      <div className="relative w-full h-24">
+        <Image
+          src="/hero/hero2.jpg"
+          alt="himachal-pilgrim Image"
+          fill
+          priority
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-black/70 to-transparent" />
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none px-4">
+          <Reveal className="text-white text-lg md:text-2xl font-bold drop-shadow-lg">
+            Outstation Routes
           </Reveal>
-        ))}
+        </div>
       </div>
-    </section>
+
+      <section className="py-12 bg-white">
+        <Reveal className="text-center mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800">
+            Outstation Routes
+          </h2>
+        </Reveal>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 px-4 md:px-12">
+          {outstationRoutes.map((route) => (
+            <Reveal
+              key={route.slug}
+              className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300"
+            >
+              {/* Image */}
+              <div className="relative h-48">
+                <Image
+                  src={route.image}
+                  alt={route.title}
+                  fill
+                  className="w-full object-cover"
+                />
+                {/* Tag Badge */}
+                <span className="absolute top-2 right-2 bg-orange text-white text-xs font-semibold px-3 py-1 rounded">
+                  Outstation Routes
+                </span>
+              </div>
+
+              {/* Content */}
+              <div className="p-4 text-center">
+                <h3 className="text-md font-medium text-gray-800 mb-3">
+                  {route.title}
+                </h3>
+
+                <Link href={`/outstation-routes/${route.slug}`}>
+                  <button className="group inline-flex items-center gap-2 bg-orange text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-black transition-all duration-300">
+                    Book Now
+                    <FaChevronRight className="group-hover:translate-x-1 transition-transform duration-300" />
+                  </button>
+                </Link>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
