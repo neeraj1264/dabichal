@@ -150,7 +150,7 @@ export default function Navbar() {
                 onClick={() => setMobileOpen((s) => !s)}
                 aria-label="Toggle menu"
               >
-                {mobileOpen ? <X size={20} /> : <BsGridFill size={20} color="#E20935"/>}
+                {mobileOpen ? <X size={20} /> : <BsGridFill size={20} color="#00c1ff"/>}
               </button>
             </div>
           </div>
