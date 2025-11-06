@@ -25,8 +25,8 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="font-heading">
-        <Navbar />
-        <InstallPrompt />
+        {/* <Navbar /> */}
+        {/* <InstallPrompt /> */}
         <main>
           {" "}
           {/* page content */}
@@ -49,8 +49,8 @@ export default function RootLayout({ children }) {
             <FaPhone size={22} />
           </a>
         </div>
-        <ScrollToTop />
-        <Footer />
+        {/* <ScrollToTop /> */}
+        {/* <Footer /> */}
       </body>
     </html>
   );
