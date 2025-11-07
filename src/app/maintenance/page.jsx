@@ -13,7 +13,7 @@ export default function MaintenancePage() {
         <h1 className="text-3xl font-bold text-gray-900">Website Under Maintenance</h1>
         <p className="mt-3 text-gray-600">We’re improving your experience. Please check back soon.</p>
         <p className="mt-6 text-sm text-gray-500">
-          Contact: <a href="mailto:sardarjitours@example.com" className="text-yellow-600">sardarjitours@example.com</a>
+          Contact: <a href="mailto:neerajm1264@gmail.com" className="text-yellow-600">neerajm1264@gmail.com</a>
         </p>
       </div>
       <footer className="mt-8 text-xs text-gray-400">© {new Date().getFullYear()} Sardar Ji Travels</footer>
