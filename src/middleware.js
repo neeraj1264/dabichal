@@ -8,7 +8,7 @@ import { NextResponse } from "next/server";
  * - Supports preview bypass via ?preview=true or cookie "preview-mode" (so you can view site)
  */
 
-const MAINTENANCE_ON = true; // <-- set to false to disable maintenance redirect
+const MAINTENANCE_ON = false; // <-- set to false to disable maintenance redirect
 
 export function middleware(request) {
   try {
