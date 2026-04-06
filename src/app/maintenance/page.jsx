@@ -14,6 +14,9 @@ export default function MaintenancePage() {
         <p className="mt-3 text-gray-600">We’re improving your experience. Please check back soon.</p>
         <p className="mt-6 text-sm text-gray-500">
           Contact: <a href="mailto:neerajm1264@gmail.com" className="text-yellow-600">neerajm1264@gmail.com</a>
+          <a href="tel:+917015823645" className="text-yellow-600">
+            +91 7015823645
+          </a>
         </p>
       </div>
       <footer className="mt-8 text-xs text-gray-400">© {new Date().getFullYear()} Sardar Ji Travels</footer>
