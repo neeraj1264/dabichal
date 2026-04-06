@@ -31,9 +31,10 @@ export default function MaintenancePage() {
 
         {/* Subtitle */}
         <p className="mt-4 text-gray-300 text-lg">
-          We're upgrading your experience 🚀  
-          Please check back shortly.
-        </p>
+  {"We're upgrading your experience 🚀"}
+  <br />
+  Please check back shortly.
+</p>
 
         {/* Divider Glow */}
         <div className="h-[1px] bg-gradient-to-r from-transparent via-yellow-400 to-transparent my-6" />
