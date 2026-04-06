@@ -25,15 +25,15 @@ export default function RootLayout({ children }) {
         />
       </head>
       <body className="font-heading">
-         <Navbar />
-        <InstallPrompt /> 
+         {/*  <Navbar />
+        <InstallPrompt /> */}
         <main>
           {" "}
           {/* page content */}
           {children}
         </main>
         {/* Floating WhatsApp & Phone Buttons */}
-         <div className="fixed bottom-6 left-6 flex flex-col gap-4 z-50">
+        {/* <div className="fixed bottom-6 left-6 flex flex-col gap-4 z-50">
           <a
             href="https://wa.me/919518131847"
             target="_blank"
@@ -46,9 +46,9 @@ export default function RootLayout({ children }) {
           <a href="tel:+919518131847" className="btn-sonar phone bg-orange">
             <FaPhone size={22} />
           </a>
-        </div>
-        <ScrollToTop />
-        <Footer />
+        </div> */}
+        {/*  <ScrollToTop />
+        <Footer /> */}
       </body>
     </html>
   );
